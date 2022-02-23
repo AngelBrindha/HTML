@@ -1,0 +1,20 @@
+section p{
+    color: red;
+}
+
+section > p{
+    color: orange;
+}
+
+h1 + p{
+    color:yellow;
+    background-color: blue;
+}
+
+h1 ~ p{
+    background-color: rgba(53, 4, 28, 0.986);
+}
+
+h1 > p{
+    background-color: rgb(243, 243, 11);
+}
