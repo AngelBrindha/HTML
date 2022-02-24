@@ -1,0 +1,32 @@
+body{
+    font-family: 'outfit', sans-serif;
+    background-color: lightgray;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+}
+.container{
+    max-width: 360px;
+    margin: 0 auto;
+}
+.card{
+    background-color: white;
+    padding: 20px;
+    border-radius: 18px;
+    text-align: center;
+}
+.card img{
+    width: 320px;
+    border-radius: 10px;
+}
+.para{
+    padding: 20px 10px;
+}
+.para h2{
+    color: hsl(218, 44%, 22%);
+    padding-bottom: 15px;
+}
+.para p{
+    color: hsl(220, 15%, 55%);
+}
