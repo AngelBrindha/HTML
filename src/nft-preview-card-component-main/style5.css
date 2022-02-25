@@ -1,0 +1,140 @@
+:root {
+    --main-font: "outfit", sans-serif;
+    --Verydark-blue: hsl(217, 54%, 11%);
+    --Very-darkblue: hsl(216, 50%, 16%);
+    --Very-dark-blue: hsl(215, 32%, 27%);
+    --White: hsl(0, 0%, 100%);
+    --container-box-shadow: -2px 10px 24px -11px hsl(216, 50%, 16%);
+    --Soft-blue: hsl(215, 51%, 70%);
+    --Cyan: hsl(178, 100%, 50%)
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body{
+    overflow-x: hidden;
+}
+body{
+    font-family: var(--main-font);
+    background-color: hsl(217, 54%, 11%);
+    min-height: 120vh;
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    justify-content: center;
+}
+.card{
+    max-width: 380px;
+    margin: 0 auto;
+    min-height: 80vh;
+    background-color:hsl(216, 50%, 16%);
+    padding: 10px;
+    border-radius: 18px;
+    text-align: center;
+    margin-left: 80px;
+    box-shadow: 0px 20px 25px 15px var(--container-box-shadow);
+    box-shadow: 0px 40px 30px 15px var(--container-box-shadow);
+    border-bottom: 3px var(--Soft-blue);
+    margin-bottom: 15px;
+
+}
+.card img{
+    width: 340px;
+    border-radius: 10px;
+    align-items: left;
+}
+.card img:hover,
+.view-container:hover
+.day-container:hover{
+    cursor: pointer;
+    text-decoration: none;
+    opacity: 0.5;
+}
+.title-container{
+    margin-top: 10px;
+    text-align: left;
+    margin-left: 1rem;
+    border-bottom: 3px var(--Soft-blue);
+    margin-bottom: 15px;
+}
+.title-container h1{
+    margin-top: 20px;
+        color: var(--White);
+        font-family: var(--main-font);
+}
+.title-container p{
+    margin-top: 20px;
+        color: var(--Soft-blue);
+        font-family: var(--main-font);
+}
+
+.view-container {
+        color: var(--Cyan);
+        font-family: var(--main-font);
+        display: inline-flex;
+        flex-direction: row;
+        align-content: space-between;
+        align-items: center;
+        gap: 1rem;
+        border-bottom: 1px solid var(--Very-dark-blue);
+        padding-bottom: 1rem;
+        margin-bottom: 1rem;
+}
+.view-container img{
+        width: 1rem;
+        height: 1rem;
+        color: var(--Cyan);
+        background-position: left;
+        background-repeat: no-repeat;
+        background-size: contain;
+        align-content: left;
+        
+}
+.day-container {
+    color: var(--Soft-blue);
+    font-family: var(--main-font);
+    display: inline-flex;
+    flex-direction: row;
+    align-content: space-between;
+    align-items: center;
+    padding: 1.5rem;
+        gap: 1rem;
+
+}
+.day-container img{
+        width: 1rem;
+        height: 1rem;
+        color: var(--Cyan);
+        background-position: left;
+        background-repeat: no-repeat;
+        background-size: contain;
+}
+.author-img{
+    width: 3.5rem;
+    height: 3rem;
+    background-image: url("../nft-preview-card-component-main/images/image-avatar.png");
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: contain;
+    
+}
+.author-container{
+    display: flex;
+    flex-direction: row;
+    align-content: left;
+    align-items: left;
+    border-top: 3px var(--White);
+    margin-left: 30px;
+
+}
+.cr{
+    color: var(--Soft-blue);
+    flex-direction: row;
+}
+.name{
+    color: var(--White);
+    flex-direction: row;
+
+}
