@@ -1,0 +1,139 @@
+:root {
+   --Pale-Blue: hsl(243, 100%, 93%);
+   --Grayish-Blue: hsl(229, 7%, 55%);
+   --Dark-Blue: hsl(228, 56%, 26%);
+   --VeryDark-Blue: hsl(229, 57%, 11%);
+   --color-1:hsl(6, 100%, 80%);
+   --color-2:hsl(335, 100%, 65%);
+   --main-font: "Raleway", sans-serif;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body{
+    overflow-x: hidden;
+}
+body{
+    min-height: 100vh;
+    background-color: var(--VeryDark-Blue);
+    background-image: url("images/bg-desktop.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom;
+    color: var(--Pale-Blue);
+    font-family: var(--main-font);
+    font-size: 14px;
+    overflow-y: scroll;
+}
+.container {
+    max-width: 1930px;
+    width: 100%;
+    display: flex;
+    margin: 0 auto;
+    position: relative;
+}
+
+.left-box {
+    background-color: var(--Dark-Blue);
+    margin: 0 20px;
+    width: 20%;
+    height: 150px;
+    padding: 30px 20px 20px;
+    border-radius: 5px 80px 5px 5px;
+    margin-left: 18rem;
+    margin-top: 12rem;
+
+}
+.left-img {
+    display: flex;
+    margin: 0 15px 0 0;
+    padding-top: 20px;
+
+}
+.img1 {
+    background: var(--VeryDark-Blue);
+    border-radius: 10px;
+    margin: 0 15px 0 0;
+    padding: 5px 10px;
+
+}
+.img2 {
+    background: var(--VeryDark-Blue);
+    border-radius: 10px;
+    margin: 0 15px 0 0;
+    padding: 5px 10px;
+
+}
+.img3 {
+    background: var(--VeryDark-Blue);
+    border-radius: 10px;
+    margin: 0 15px 0 0;
+    padding: 5px 10px;
+
+}
+.right-box {
+    background-color: var(--Dark-Blue);
+    margin: 0 20px;
+    width: 40%;
+    height: 120px;
+    padding: 30px 20px 20px;
+    border-radius: 5px 5px 5px 5px;
+    margin-left: 1rem;
+    margin-top: 14rem;
+    color: var(--Grayish-Blue);
+
+}
+.bold {
+    color: var(--Pale-Blue);
+}
+
+.loading {
+    width: 100%;
+    background: var(--VeryDark-Blue);
+    border-radius: 50px;
+    border: var(--VeryDark-Blue);
+    outline: none;
+}
+.pinkgradient {
+    position: relative;
+    width: 80%;
+    padding: 2px;
+    border-radius: 50px;
+    background-image: linear-gradient(to right,hsl(6, 100%, 80%),hsl(335, 100%, 65%));
+    margin-top: 20px;
+}
+.whitedot {
+    background-color: white;
+    width: 2vmin;
+    height: 2vmin;
+    border-radius: 100%;
+    position: relative;
+    left: 96%;
+    top: 0;
+}
+.msg-box {
+    font-size: 30px;
+    padding: 10px 5px;
+    background-color: white;
+    border-radius: 10px 10px 0 10px;
+    position: absolute;
+    top: 200px;
+    right: 280px;
+}
+.msg-box::after {
+    content: ""; 
+    display: block;
+    width: 0;
+    height: 0;
+    position: absolute;
+    border-top: solid 40px white;
+    border-left: solid 50px transparent;
+    border-right: solid 0px transparent;
+    border-bottom: solid 10px transparent;
+    left: 120px;
+}
+.big {
+    color: var(--VeryDark-Blue);
+}
