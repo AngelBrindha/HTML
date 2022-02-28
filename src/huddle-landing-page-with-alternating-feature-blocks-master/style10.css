@@ -13,11 +13,7 @@
     padding: 0;
     box-sizing: border-box;
 }
-body {
-    justify-content: center;
-    align-items: center;
-    position: relative;
-}
+
 header {
     background: url(./images/bg-hero-desktop.svg);
     background-color: rgb(236, 255, 250);
@@ -65,8 +61,8 @@ header {
 }
 .mock1 p{
     color: var(--Grayish-Blue);
-    line-height: 1.5;
     margin: 30px 0px 30px 0px;
+    line-height: 1.5;
 }
 .free {
     color: white;
@@ -79,18 +75,171 @@ header {
     box-shadow: var(--container-box-shadow);
 }
 .card {
-    display: grid;
-    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 120px 80px 40px;
 
 }
 .card1 {
- position: relative;
  display: flex;
- justify-content: center;
+ justify-content: space-between;
  align-items: center;
- margin-top: 800px;
+ margin-top: 700px;
+ padding: 50px 10px 50px 65px;
+ box-shadow: 0 3px 16px rgba(0,0,0,0.12);
+ margin-bottom: 40px;
+ border-radius: 10px;
 
 }
 .card1 img {
     width: 220px;
+    margin-right: 100px;
 }
+.card1 h3{
+    font-family: var(--main-font);
+    margin-bottom: 20px;
+    
+}
+.card1 p{
+    color: var(--Grayish-Blue);
+    margin-right: 300px;
+}
+.card2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 40px;
+    padding: 50px 10px 50px 65px;
+    box-shadow: 0 3px 16px rgba(0,0,0,0.12);
+    margin-bottom: 40px;
+    border-radius: 10px;
+   
+   }
+   .card2 img {
+       width: 220px;
+   }
+   .card2 h3{
+    font-family: var(--main-font);
+    margin-bottom: 20px;
+    margin-left: 100px;
+
+    
+    }
+    .card2 p{
+    color: var(--Grayish-Blue);
+    margin-left: 100px;
+    margin-right: 200px;
+
+    }
+   .card3 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 40px;
+    padding: 50px 10px 50px 65px;
+    box-shadow: 0 3px 16px rgba(0,0,0,0.12);
+    margin-bottom: 40px;
+    border-radius: 10px;
+   
+   }
+   .card3 img {
+       width: 220px;
+    margin-right: 100px;
+
+   }
+   .card3 h3{
+    font-family: var(--main-font);
+    margin-bottom: 20px;
+    
+    }
+    .card3 p{
+    color: var(--Grayish-Blue);
+    margin-right: 300px;
+    }
+    .build {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    margin-top: 0px;
+    margin-bottom: -120px;
+    padding: 90px 0px 50px 10px;
+    margin-left: 380px;
+    margin-right: 380px;
+    box-shadow: 0 3px 16px rgba(0,0,0,0.12);
+    border-radius: 10px;
+    }
+    .built h2 {
+        font-family: var(--main-font);
+    }
+    .get {
+        color: white;
+        background-color: var(--Pink);
+        border-radius: 25px;
+        width: 250px;
+        height: 50px;
+        cursor: pointer;
+        border: 2px solid var(--Pink);
+        box-shadow: var(--container-box-shadow);
+        margin-top: 30px;
+    }
+    footer {
+        display: flex;
+        flex-direction: column;
+        background-color: var(--VeryDark-Cyan);
+        color: white;
+        padding: 200px 100px 30px;
+    }
+    .sec ul li{
+        list-style: none;
+    }
+    .sec {
+        display: flex;
+        margin: 40px 0px;
+    }
+    .sec1 {
+        min-width: 40%;
+        width: 40%;
+    }
+    .add {
+        display: flex;
+    }
+    .add img {
+        margin-top: 5px;
+        margin-right: 20px;
+    }
+    li{
+        margin-bottom: 20px;
+        padding-right: 60px;
+    }
+    .sec2, .sec3, .sec4{
+        width: 20%;
+        margin-left: 30px;
+    }
+    .fa {
+        display: flex;
+        padding: 0;
+
+    }
+    .fa li{
+        padding: 0px 5px;
+
+    }
+    a{
+        border: 1px solid white;
+        border-radius: 50%;
+        color: white;
+        text-decoration: none;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        width: 30px;
+        height: 30px;
+    }
+    .copy {
+        text-align: right;
+    }
