@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background: rgb(103, 103, 197) ;
+    padding: 50px;
+    
+}
+caption {
+    font-size: 40px;
+    color: rgb(238, 226, 63);
+    font-weight: 600;
+    margin-left: 550px;
+}
+th {
+    color: rgb(223, 122, 209);
+    padding-left: 550px ;
+    font-size: 30px;
+}
+td {
+    padding-left: 600px;
+}
+a {
+    color: white;
+    line-height: 2;
+    font-size: 20px;
+}
+a:focus, a:hover {
+    color: rgb(59, 12, 36);
+}
