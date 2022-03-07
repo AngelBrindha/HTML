@@ -4,29 +4,46 @@
     box-sizing: border-box;
 }
 body {
-    background: rgb(103, 103, 197) ;
+    background-image: url(./images/lapbg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
     padding: 50px;
     
 }
 caption {
-    font-size: 40px;
-    color: rgb(238, 226, 63);
-    font-weight: 600;
-    margin-left: 550px;
+    display: none;
 }
 th {
-    color: rgb(223, 122, 209);
-    padding-left: 550px ;
-    font-size: 30px;
+    display: none;
 }
-td {
-    padding-left: 600px;
+nav {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    margin-left: 450px;
+    
 }
-a {
-    color: white;
-    line-height: 2;
-    font-size: 20px;
+nav a {
+   padding-right: 10px;
+   padding-left: 20px;
+   color: white;
+   font-size: 20px;
+   font-weight: 600;
+   text-decoration: none;
+   
 }
 a:focus, a:hover {
-    color: rgb(59, 12, 36);
+    color: blue;
+}
+h1 {
+    color: white;
+    margin-top: 200px;
+    font-size: 50px;
+}
+p {
+    color: rgb(22, 21, 24);
+    font-size: 30px;
+    margin-top: 20px;
+    font-weight: 600;
+    margin-right: 700px;
 }
