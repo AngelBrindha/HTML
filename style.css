@@ -46,3 +46,15 @@ p {
     font-weight: 600;
     margin-right: 700px;
 }
+button {
+    background-color: white;
+    color: rgb(79, 172, 212);
+    margin-top: 30px;
+    border-radius: 25px;
+    font-size: 20px;
+    font-weight: 600;
+    width: 200px;
+    height: 50px;
+    border: none;
+    cursor: pointer;
+}
