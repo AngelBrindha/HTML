@@ -1,0 +1,123 @@
+:root{
+    --VeryDark-GrayishBlue: hsl(217, 19%, 35%);
+    --Desaturated-DarkBlue: hsl(214, 17%, 51%);
+    --Grayish-Blue: hsl(212, 23%, 69%);
+    --Light-GrayishBlue: hsl(210, 46%, 95%);
+    --main-font: "Manrope", sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: var(--Light-GrayishBlue);
+    font-family: var(--main-font);
+}
+.container {
+    display: flex;
+    background-color: white;
+    margin-top: 100px;
+    margin-left: 180px;
+    width: 1000px;
+    height: 320px;
+    border-radius: 10px;
+}
+.drawer-img {
+    width: 400px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.profile img {
+    border-radius: 50%;
+    width: 50px;
+}
+.content {
+    padding: 50px;
+    margin-right: 200px ;
+    position: relative;
+}
+.content h2 {
+    color: var(--VeryDark-GrayishBlue);
+    margin-bottom: 10px;
+    
+}
+.content p {
+    color: var(--Desaturated-DarkBlue);
+    justify-content: space-evenly;
+    
+
+}
+.profile {
+    display: flex;
+    margin-top: 40px;
+    
+    
+}
+.profile h4 {
+    padding: 10px;
+    color: var(--VeryDark-GrayishBlue);
+}
+.profile p{
+    margin-top: 30px;
+    margin-left: -145px;
+    font-size: 15px;
+    color: var(--Grayish-Blue);
+}
+.icon {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    margin-left: 450px;
+    margin-top: -50px;
+    padding: 8px;
+    background-color: var(--VeryDark-GrayishBlue);
+    border-radius: 60%;
+    height: 30px;
+    width: 30px;
+    border: none;
+    cursor: pointer;
+}
+.box {
+    background-color: var(--VeryDark-GrayishBlue);
+    display: flex;
+    width: 280px;
+    height: 50px;
+    margin-top: -90px;
+    margin-left: 380px;
+    border-radius: 15px;
+    padding: 15px;
+    position:absolute;
+    cursor: pointer;
+    visibility: hidden;
+    
+}
+.box.active {
+    visibility: visible;
+}
+.box img {
+    width: 20px;
+    height: 20px;
+    margin-left: 12px;
+    margin-right: 12px;
+}
+.box p{
+    margin-right: 15px;
+    margin-left: 10px;
+    letter-spacing: 2px;
+}
+.box::after {
+    content: ""; 
+    display: block;
+    width: 0;
+    height: 0;
+    position: absolute;
+    border-top: solid 30px var(--VeryDark-GrayishBlue);
+    border-left: solid 30px transparent;
+    border-right: solid 20px transparent;
+    border-bottom: solid 0px transparent;
+    top: 40px;
+    right: 200px;
+}
+
