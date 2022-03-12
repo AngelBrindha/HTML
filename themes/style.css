@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 body {
-    background-image: url(./images/lapbg.jpg);
+    background-image: url(../images/lapbg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     padding: 50px;
