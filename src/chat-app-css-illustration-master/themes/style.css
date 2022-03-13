@@ -1,29 +1,29 @@
 :root {
-    --Pale-Violet: hsl(276, 100%, 81%);  /* (sub-heading at the top of the app UI) */
-    --Moderate-Violet : hsl(276, 55%, 52%);   /*  (chat on the left) */
-    --Desaturated-DarkViolet : hsl(271, 15%, 43%);  /*(chat on the right)*/
-    --Grayish-Blue: hsl(206, 6%, 79%);      /*(placeholder text) */
-    --VeryDark-DesaturatedViolet : hsl(271, 36%, 24%);    /* (main heading) */
-    --Dark-GrayishViolet : hsl(270, 7%, 64%);         /*(paragraph) */
+    --Desaturated-DarkViolet : hsl(271, 15%, 43%);           /*(chat on the right)*/
+    --Dark-GrayishViolet : hsl(270, 7%, 64%);                /*(paragraph) */
+    --Grayish-Blue: hsl(206, 6%, 79%);                       /*(placeholder text) */
     --Light-Magenta: hsl(293, 100%, 63%);
     --Light-Violet: hsl(264, 100%, 61%);
-    --White: hsl(0, 0%, 100%);
-    --Light-Grayish-Violet : hsl(270, 20%, 96%);          /* (app background) */
-    --VeryDark-DesaturatedViolet: hsl(271, 36%, 24%);         /* (submit button background) */
-    --VeryLight-Magenta: hsl(289, 100%, 72%);           /*(radio button outline) */
+    --Light-Grayish-Violet : hsl(270, 20%, 96%);             /* (app background) */
     --main-font: "Rubik", sans-serif;
+    --Moderate-Violet : hsl(276, 55%, 52%);                  /*  (chat on the left) */
+    --Pale-Violet: hsl(276, 100%, 81%);                      /* (sub-heading at the top of the app UI) */
+    --VeryDark-DesaturatedViolet : hsl(271, 36%, 24%);       /* (main heading) */
+    --VeryDark-DesaturatedViolet: hsl(271, 36%, 24%);        /* (submit button background) */
+    --VeryLight-Magenta: hsl(289, 100%, 72%);                /*(radio button outline) */
+    --White: hsl(0, 0%, 100%);
 }
 
 * {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 body {
-    font-family: var(--main-font);
     background: var(--Light-Grayish-Violet);
-    position: relative;
+    font-family: var(--main-font);
     overflow-y: scroll;
+    position: relative;
 }
 i{
     font-size: 20px;
@@ -33,74 +33,72 @@ i{
     display: flex;
 }
 .background {
-    position: absolute;
-    height: 130vh;
-    width: 30rem;
     background: linear-gradient(to bottom,hsl(293, 100%, 63%),hsl(264, 100%, 61%));
     border-radius: 0 0 40% 40%;
+    height: 130vh;
     left: -100px;
+    position: absolute;
     top: 0;
+    width: 30rem;
 }
 .phone{
     position: relative;
 }
 .card {
-    width: 450px;
-    min-height: 450px;
-    position: absolute;
-    top: 100px;
-    left: 100px;
+    background: var(--Light-Grayish-Violet);
     border: 10px solid var(--White);
     border-radius: 30px;
-    overflow-x: hidden;
-    background: var(--Light-Grayish-Violet);
+    left: 100px;
     margin-left: 200px;
+    min-height: 450px;
+    overflow-x: hidden;
+    position: absolute;
+    top: 100px;
+    width: 450px;
 }
 .white-bg {
-    width: 100px;
-    height: 20px;
-    position: absolute;
     background: var(--White);
     border-radius: 0 0 15px 15px;
+    height: 20px;
     left: 160px;
+    position: absolute;
+    width: 100px;
     top:0px
 }
 header {
     background: linear-gradient(to left,hsl(293, 100%, 63%),hsl(264, 100%, 61%));
-    display: flex;
     color: var(--White);
+    display: flex;
     padding: 30px 20px 20px 30px;
 }
 header img{
     border-radius: 50%;
-    width: 40px;
     margin-left: 20px;
     margin-right: 20px;
+    width: 40px;
 }
 header p{
-    padding-top: 20px;
-    margin-left: -110px;
     color: var(--Pale-Violet);
+    margin-left: -110px;
+    padding-top: 20px;
 }
 .set {
     margin-left: 120px;
 }
 section {
-    padding: 10px 10px;
     display: flex;
     flex-direction: column;
-
+    padding: 10px 10px;
 }
 .left-msg p{
     background: var(--Pale-Violet);
     border-radius: 10px;
-    width: 250px;
-    height: 40px;
+    color: var(--Moderate-Violet);
     font-size: 12px;
+    height: 40px;
     margin-bottom: 5px;
     padding: 10px;
-    color: var(--Moderate-Violet);
-
+    width: 250px;
 }
 .right-msg img{
     border-radius: 30%;
@@ -117,35 +115,35 @@ section {
 .right-msg p{
     background: var(--White);
     border-radius: 10px;
-    width: 200px;
-    height: 40px;
-    font-size: 12px;
-    margin-bottom: 5px;
-    padding: 10px;
     color: var(--Desaturated-DarkViolet);
+    font-size: 12px;
+    height: 40px;
+    margin-bottom: 5px;
     margin-left: 200px;
+    padding: 10px;
+    width: 200px;
 }
 .left-msg1 p{
     background: var(--Pale-Violet);
     border-radius: 10px;
-    width: 250px;
-    height: 60px;
-    font-size: 12px;
-    margin-bottom: 10px;
-    padding: 10px;
     color: var(--Moderate-Violet);
+    font-size: 12px;
+    height: 60px;
+    margin-bottom: 10px;
     margin-top: 10px;
+    padding: 10px;
+    width: 250px;
 }
 .offer1 {
+    background: linear-gradient(to left, var(--Light-Violet), var(--Light-Magenta));
+    border-radius: 15px;
+    color: var(--White);
+    display: flex;
+    height: 50px;
+    margin-bottom: 15px;
+    padding: 15px;
     position: relative;
     width: 260px;
-    height: 50px;
-    background: linear-gradient(to left, var(--Light-Violet), var(--Light-Magenta));
-    color: var(--White);
-    padding: 15px;
-    display: flex;
-    border-radius: 15px;
-    margin-bottom: 15px;
 }
 .offer1 p {
     margin-left: 20px;
@@ -159,14 +157,14 @@ section {
     color: var(--VeryLight-Magenta);
 }
 .offer2 {
-    position: relative;
-    width: 260px;
-    height: 50px;
     background: linear-gradient(to left, var(--Light-Violet), var(--Light-Magenta));
-    color: var(--White);
-    padding: 15px;
-    display: flex;
     border-radius: 15px;
+    color: var(--White);
+    display: flex;
+    height: 50px;
+    padding: 15px;
+    position: relative;
+    width: 260px;  
 }
 .offer2 p {
     margin-left: 20px;
@@ -181,44 +179,44 @@ section {
 }
 form {
     background-color: var(--White);
-    margin: 0 15px 15px 15px;
     border-radius: 30px;
-    position: relative;
     display: flex;
     height: 35px;
+    margin: 0 15px 15px 15px;
     margin-top: 20px;
+    position: relative;
 }
 form input {
-    border: none;
     background: transparent;
-    padding: 15px;
+    border: none;
     outline: none;
+    padding: 15px;
 }
 form i{
-    color: var(--White);
     background: var(--VeryDark-DesaturatedViolet);
     border-radius: 80%;
-    padding: 5px;
-    margin-left: 150px;
+    color: var(--White);
     cursor: pointer;
+    margin-left: 150px;
+    padding: 5px;
 }
 .content {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    margin-left: 800px;
     min-height: 100vh;
     width: 50%;
-    margin-left: 800px;
 }
 .content h1{
+    color: var(--VeryDark-DesaturatedViolet);
     font-size: 45px;
     font-family: 700;
-    color: var(--VeryDark-DesaturatedViolet);
     margin-bottom: 20px;
 }
 .content p{
     color: var(--Dark-GrayishViolet);
-    width: 400px;
-    line-height: 1.5;
     font-weight: 500;
+    line-height: 1.5;
+    width: 400px;
 }

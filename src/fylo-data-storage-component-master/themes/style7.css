@@ -1,50 +1,49 @@
 :root {
-   --Pale-Blue: hsl(243, 100%, 93%);
-   --Grayish-Blue: hsl(229, 7%, 55%);
-   --Dark-Blue: hsl(228, 56%, 26%);
-   --VeryDark-Blue: hsl(229, 57%, 11%);
-   --color-1:hsl(6, 100%, 80%);
-   --color-2:hsl(335, 100%, 65%);
-   --main-font: "Raleway", sans-serif;
+     --color-1:hsl(6, 100%, 80%);
+     --color-2:hsl(335, 100%, 65%);
+     --Dark-Blue: hsl(228, 56%, 26%);
+     --Grayish-Blue: hsl(229, 7%, 55%);
+     --main-font: "Raleway", sans-serif;
+     --Pale-Blue: hsl(243, 100%, 93%);
+     --VeryDark-Blue: hsl(229, 57%, 11%);
+   
 }
 * {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 html, body{
     overflow-x: hidden;
 }
 body{
-    min-height: 100vh;
     background-color: var(--VeryDark-Blue);
-    background-image: url("images/bg-desktop.png");
+    background-image: url("../images/bg-desktop.png");
     background-repeat: no-repeat;
     background-size: contain;
     background-position: bottom;
     color: var(--Pale-Blue);
     font-family: var(--main-font);
     font-size: 14px;
+    min-height: 100vh;
     overflow-y: scroll;
 }
 .container {
-    max-width: 1930px;
-    width: 100%;
     display: flex;
     margin: 0 auto;
+    max-width: 1930px;
     position: relative;
+    width: 100%;
 }
 
 .left-box {
     background-color: var(--Dark-Blue);
-    margin: 0 20px;
-    width: 20%;
-    height: 150px;
-    padding: 30px 20px 20px;
     border-radius: 5px 80px 5px 5px;
+    height: 150px;
     margin-left: 18rem;
-    margin-top: 12rem;
-
+    margin-top: 195px;
+    padding: 30px 20px 20px;
+    width: 20%;
 }
 .left-img {
     display: flex;
@@ -75,65 +74,71 @@ body{
 }
 .right-box {
     background-color: var(--Dark-Blue);
-    margin: 0 20px;
-    width: 40%;
-    height: 120px;
-    padding: 30px 20px 20px;
     border-radius: 5px 5px 5px 5px;
-    margin-left: 1rem;
-    margin-top: 14rem;
     color: var(--Grayish-Blue);
-
+    height: 120px;
+    margin: 0 20px;
+    margin-top: 14rem;
+    padding: 30px 20px 20px;
+    width: 40%;
 }
 .bold {
     color: var(--Pale-Blue);
 }
+.bold-1 {
+    color: var(--Pale-Blue);
+    margin-left: 400px;
+}
 
 .loading {
-    width: 100%;
     background: var(--VeryDark-Blue);
     border-radius: 50px;
     border: var(--VeryDark-Blue);
     outline: none;
+    width: 100%;
 }
 .pinkgradient {
+    background-image: linear-gradient(to right,hsl(6, 100%, 80%),hsl(335, 100%, 65%));
+    border-radius: 50px;
+    margin-top: 20px;
+    padding: 2px;
     position: relative;
     width: 80%;
-    padding: 2px;
-    border-radius: 50px;
-    background-image: linear-gradient(to right,hsl(6, 100%, 80%),hsl(335, 100%, 65%));
-    margin-top: 20px;
 }
 .whitedot {
     background-color: white;
-    width: 2vmin;
-    height: 2vmin;
     border-radius: 100%;
-    position: relative;
+    height: 2vmin;
     left: 96%;
+    position: relative;
     top: 0;
+    width: 2vmin;
 }
 .msg-box {
-    font-size: 30px;
-    padding: 10px 5px;
     background-color: white;
     border-radius: 10px 10px 0 10px;
+    font-size: 30px;
+    padding: 10px 5px;
     position: absolute;
-    top: 200px;
     right: 280px;
+    top: 200px;
 }
 .msg-box::after {
-    content: ""; 
-    display: block;
-    width: 0;
-    height: 0;
-    position: absolute;
     border-top: solid 40px white;
     border-left: solid 50px transparent;
     border-right: solid 0px transparent;
     border-bottom: solid 10px transparent;
-    left: 120px;
+    content: ""; 
+    display: block;
+    left: 79px;
+    top: 40px;
+    position: absolute;
+
 }
 .big {
     color: var(--VeryDark-Blue);
+}
+.msg-box span{
+    font-size: 15px;
+    padding: 5px;
 }
