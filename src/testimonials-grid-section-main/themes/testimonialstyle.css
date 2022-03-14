@@ -23,9 +23,9 @@ body{
     grid-template-columns: repeat(4,1fr);
     grid-template-rows: auto;
     grid-template-areas: 
-    "card1 card1 card2 card5"
-    "card1 card1 card2 card5"
-    "card3 card4 card4 card5"
+    "daniel daniel jonathan kira"
+    "daniel daniel jonathan kira"
+    "jeanetta patrick patrick kira"
     ;
     gap:20px;
     height: auto;
@@ -35,12 +35,16 @@ body{
     margin-right: auto;
     padding: 5rem;
 }
-.card1, .card2, .card3, .card4, .card5 {
+.daniel, 
+.jonathan, 
+.jeanetta, 
+.patrick, 
+.kira {
     border-radius: 5px;
     padding: 2rem;
 }
 
-.card1 {
+.daniel {
     background-color: var(--Moderate-violet);
     background-image: url("../images/bg-pattern-quotation.svg");
     background-repeat: no-repeat;
@@ -48,10 +52,10 @@ body{
     background-size: 100px;
     background-position-x: 80%;
     color: var(--White);
-    grid-area: card1;
+    grid-area: daniel;
 }
 
-.row1 {
+.user-details {
     align-items: center;
     color: var(--Light-gray);
     display: flex;
@@ -60,62 +64,62 @@ body{
     margin-bottom: 10px;
 }
 
-.row1 img{
+.user-details img{
     border-radius: 50%;
 }
-.row1 h4{
+.user-details h4{
     color: var(--White);
     font-size: 15px;
 }
-.row1 p {
+.user-details p {
     color: var(--Light-gray);
     font-size: 12px;
     gap: 20px;
 }
-.row2 {
+.review {
     font-size: 1.4rem;
     font-weight: 500;
     margin-bottom: 1rem;
 }
-.row3 {
+.feedback {
     color: var(--Light-grayish-blue);
     line-height: 1.5;
     margin-bottom: 1rem;
 }
-.row4 {
+.feedback-one {
     color: rgb(53, 49, 49);
     line-height: 1.5;
     margin-bottom: 1rem;
 }
 
-.card2 {
+.jonathan {
     background-color: var(--Very-dark-grayish-blue);
     color: var(--White);
-    grid-area: card2;
+    grid-area: jonathan;
 }
-.card3 {
+.jeanetta {
     background-color: var(--White);
     color: black;
-    grid-area: card3;
+    grid-area: jeanetta;
 }
-.card4 {
+.patrick {
     background-color: var(--Very-dark-blackish-blue);
     color: var(--White);
-    grid-area: card4;
+    grid-area: patrick;
 }
-.card5 {
+.kira {
     background-color: var(--White);
     color: black;
-    grid-area: card5;
+    grid-area: kira;
 }
-.card3 h4, .card5 h4{
+.jeanetta h4, 
+.kira h4 {
     color: var(--Very-dark-blackish-blue);
 }
 .attribution {
       font-size: 11px;
       text-align: center;
-    }
-
-    .attribution a {
-      color: hsl(228, 45%, 44%);
-    }
+}
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
