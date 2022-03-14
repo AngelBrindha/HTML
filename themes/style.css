@@ -1,7 +1,7 @@
 * {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 body {
     background-image: url(../images/lapbg.jpg);
@@ -20,45 +20,43 @@ nav {
     display: flex;
     margin-left: 250px;
     text-transform: uppercase;
-    
 }
 nav a {
-   padding-right: 10px;
-   padding-left: 20px;
    color: white;
    font-size: 16px;
    font-weight: 600;
+   padding-right: 10px;
+   padding-left: 20px;
    text-decoration: none;
-   
 }
 a:focus, a:hover {
     color: blue;
 }
 h1 {
     color: white;
-    margin-top: 200px;
     font-size: 50px;
+    margin-top: 200px;
 }
 p {
     color: rgb(22, 21, 24);
     font-size: 30px;
-    margin-top: 20px;
     font-weight: 600;
+    margin-top: 20px;
     margin-right: 700px;
 }
 button {
     background-color: white;
-    color: rgb(79, 172, 212);
-    margin-top: 30px;
+    border: none;
     border-radius: 25px;
+    color: rgb(79, 172, 212);
+    cursor: pointer;
     font-size: 20px;
     font-weight: 600;
-    width: 200px;
     height: 50px;
-    border: none;
-    cursor: pointer;
+    margin-top: 30px;
+    width: 200px;
 }
 button a{
-    text-decoration: none;
     color: rgb(197, 26, 240);
+    text-decoration: none;
 }

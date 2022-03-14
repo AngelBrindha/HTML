@@ -3,7 +3,7 @@
     --Light-gray: hsl(0, 0%, 81%);
     --Light-grayish-blue: hsl(210, 46%, 95%);
     --Moderate-violet: hsl(263, 55%, 52%);
-    --Very-dark-grayish-blue: hsl(217, 19%, 35%);
+    --Very-dark-grayish-blue: hsl(210, 9%, 39%);
     --Very-dark-blackish-blue: hsl(219, 29%, 14%);
     --White: hsl(0, 0%, 100%);
 }
@@ -78,10 +78,16 @@ body{
     margin-bottom: 1rem;
 }
 .row3 {
-    color: var(--Light-gray);
+    color: var(--Light-grayish-blue);
     line-height: 1.5;
     margin-bottom: 1rem;
 }
+.row4 {
+    color: rgb(53, 49, 49);
+    line-height: 1.5;
+    margin-bottom: 1rem;
+}
+
 .card2 {
     background-color: var(--Very-dark-grayish-blue);
     color: var(--White);
@@ -89,7 +95,7 @@ body{
 }
 .card3 {
     background-color: var(--White);
-    color: var(--Very-dark-grayish-blue);
+    color: black;
     grid-area: card3;
 }
 .card4 {
@@ -99,9 +105,17 @@ body{
 }
 .card5 {
     background-color: var(--White);
-    color: var(--Very-dark-grayish-blue);
+    color: black;
     grid-area: card5;
 }
 .card3 h4, .card5 h4{
     color: var(--Very-dark-blackish-blue);
 }
+.attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }

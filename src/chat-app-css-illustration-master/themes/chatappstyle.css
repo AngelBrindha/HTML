@@ -220,3 +220,11 @@ form i{
     line-height: 1.5;
     width: 400px;
 }
+.attribution {
+    font-size: 11px;
+    text-align: center;
+  }
+
+  .attribution a {
+    color: hsl(228, 45%, 44%);
+  }
