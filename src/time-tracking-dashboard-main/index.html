@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./themes/style.css">
+  <title>Time tracking dashboard</title>
+
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="grid-container">
+    <section class="user">
+      <div class="top">
+        <div> <img class="jeremy" src="./images/image-jeremy.png"> </div>
+        <p>Report for</p>
+        <h1>Jeremy</h1>
+        <h1> Robson</h1>
+      </div>
+      <div class="link">
+        <p id="daily">Daily</p>
+        <p class="active" id="weekly">Weekly</p>
+        <p id="monthly">Monthly</p>
+      </div>
+    </section>
+    <section class="work">
+      <div class="grid-item">
+        <div class="action">
+          <p>Work</p>
+          <div> <img src="./images/icon-ellipsis.svg" alt=""> </div>
+        </div>
+        <div class="time">
+          <p class="hour" id="work-time-current">32hrs </p>
+          <span class="duration" id="work-time-previous">Last Week - 36hrs</span>
+        </div>
+      </div>
+    </section>
+    <section class="play">
+      <div class="grid-item">
+        <div class="action">
+          <p>Play</p>
+          <div> <img src="./images/icon-ellipsis.svg" alt=""> </div>
+        </div>
+        <div class="time">
+          <p class="hour" id="play-time-current">10hrs </p>
+          <span class="duration" id="play-time-previous">Last Week - 8hrs</span>
+        </div>
+      </div>
+    </section>
+    <section class="study">
+      <div class="grid-item">
+        <div class="action">
+          <p>Study</p>
+          <div> <img src="./images/icon-ellipsis.svg" alt=""> </div>
+        </div>
+        <div class="time">
+          <p class="hour" id="study-time-current">4hrs </p>
+          <span class="duration" id="study-time-previous">Last Week - 7hrs</span>
+        </div>
+      </div>
+    </section>
+    <section class="exercise">
+      <div class="grid-item">
+        <div class="action">
+          <p>Exercise</p>
+          <div> <img src="./images/icon-ellipsis.svg" alt=""> </div>
+        </div>
+        <div class="time">
+          <p class="hour" id="exercise-time-current">4hrs </p>
+          <span class="duration" id="exercise-time-previous">Last Week - 5hrs</span>
+        </div>
+      </div>
+    </section>
+    <section class="social">
+      <div class="grid-item">
+        <div class="action">
+          <p>Social</p>
+          <div> <img src="./images/icon-ellipsis.svg" alt=""> </div>
+        </div>
+        <div class="time">
+          <p class="hour" id="social-time-current">5hrs </p>
+          <span class="duration" id="social-time-previous">Last Week - 10hrs</span>
+        </div>
+      </div>
+    </section>
+    <section class="selfcare">
+      <div class="grid-item">
+        <div class="action">
+          <p>Self Care</p>
+          <div> <img src="./images/icon-ellipsis.svg" alt=""> </div>
+        </div>
+        <div class="time">
+          <p class="hour" id="selfcare-time-current">2hrs </p>
+          <span class="duration" id="selfcare-time-previous">Last Week - 2hrs</span>
+        </div>
+      </div>
+    </section>
+  </div>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Angel</a>.
+  </div>
+  <script src="./script/script.js"></script>
+</body>
+
+</html>
