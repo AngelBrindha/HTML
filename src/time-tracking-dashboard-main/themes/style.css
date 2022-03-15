@@ -136,6 +136,9 @@ body {
     background-color: var(--Dark-blue);
     border-radius: 5px;
 }
+.grid-item:hover {
+    background-color: var(--Desaturated-blue);
+}
 .action {
     display: flex;
     justify-content: space-between;

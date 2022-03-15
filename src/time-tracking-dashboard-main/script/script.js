@@ -1,71 +1,82 @@
-let links = document.querySelectorAll('.link');
+const daily = document.querySelector('#daily');
+const weekly = document.querySelector('#weekly');
+const monthly = document.querySelector('#monthly');
 
-let daily = document.getElementById('#daily');
-let weekly = document.getElementById('#weekly');
-let monthly = document.getElementById('#monthly');
+const workTimeCurrent = document.querySelector('#work-time-current');
+const workTimePrevious = document.querySelector('#work-time-previous');
+const playTimeCurrent = document.querySelector('#play-time-current');
+const playTimePrevious = document.querySelector('#play-time-previous');
+const studyTimeCurrent = document.querySelector('#study-time-current');
+const studyTimePrevious = document.querySelector('#study-time-previous');
+const exerciseTimeCurrent = document.querySelector('#exercise-time-current');
+const exerciseTimePrevious = document.querySelector('#exercise-time-previous');
+const socialTimeCurrent = document.querySelector('#social-time-current');
+const socialTimePrevious = document.querySelector('#social-time-previous');
+const selfCareTimeCurrent = document.querySelector('#selfcare-time-current');
+const selfCareTimePrevious = document.querySelector('#selfcare-time-previous');
 
-let workTimeCurrent = document.getElementById('work-time-current');
-let playTimeCurrent = document.getElementById('play-time-current');
-let studyTimeCurrent = document.getElementById('study-time-current');
-let exerciseTimeCurrent = document.getElementById('exercise-time-current');
-let socialTimeCurrent = document.getElementById('social-time-current');
-let selfCareTimeCurrent = document.getElementById('selfcare-time-current');
+daily.addEventListener('click', dailyFunc);
 
-let timeCurrent = [
-  workTimeCurrent,
-  playTimeCurrent,
-  studyTimeCurrent,
-  exerciseTimeCurrent,
-  socialTimeCurrent,
-  selfCareTimeCurrent,
-];
-let workTimePrevious = document.getElementById('work-time-previous');
-let playTimePrevious = document.getElementById('play-time-previous');
-let studyTimePrevious = document.getElementById('study-time-previous');
-let exerciseTimePrevious = document.getElementById('exercise-time-previous');
-let socialTimePrevious = document.getElementById('social-time-previous');
-let selfCareTimePrevious = document.getElementById('selfcare-time-previous');
+function dailyFunc() {
+  workTimeCurrent.textContent = '5hrs';
+  workTimePrevious.textContent = 'Last Day - 7hrs';
 
-let timePrevious = [
-  workTimePrevious,
-  playTimePrevious,
-  studyTimePrevious,
-  exerciseTimePrevious,
-  socialTimePrevious,
-  selfCareTimePrevious,
-];
+  playTimeCurrent.textContent = '1hrs';
+  playTimePrevious.textContent = 'Last Day - 2hrs';
 
-const data = fetch('../data.json', { mode: 'no-cors' })
-  .then((res) => res.json())
-  .then((data) => {
-    function switchActive(links, active) {
-      links.forEach(function (link) {
-        link.classList.remove('active');
-      });
-      active.classList.add('active');
-    }
-    daily.addEventListener('click', function () {
-      switchActive(links, this);
+  studyTimeCurrent.textContent = '0hrs';
+  studyTimePrevious.textContent = 'Last Day - 1hrs';
 
-      for (i = 0; i < data.length; i++) {
-        timeCurrent[i].textContent = data[i].timeframes.daily.current;
-        timePrevious[i].textContent = data[i].timeframes.daily.previous;
-      }
-    });
-    weekly.addEventListener('click', function () {
-      switchActive(links, this);
+  exerciseTimeCurrent.textContent = '1hrs';
+  exerciseTimePrevious.textContent = 'Last Day - 1hrs';
 
-      for (i = 0; i < data.length; i++) {
-        timeCurrent[i].textContent = data[i].timeframes.weekly.current;
-        timePrevious[i].textContent = data[i].timeframes.weekly.previous;
-      }
-    });
-    monthly.addEventListener('click', function () {
-      switchActive(links, this);
+  socialTimeCurrent.textContent = '1hrs';
+  socialTimePrevious.textContent = 'Last Day - 3hrs';
 
-      for (i = 0; i < data.length; i++) {
-        timeCurrent[i].textContent = data[i].timeframes.monthly.current;
-        timePrevious[i].textContent = data[i].timeframes.monthly.previous;
-      }
-    });
-  });
+  selfCareTimeCurrent.textContent = '0hrs';
+  selfCareTimePrevious.textContent = 'Last Day - 1hrs';
+}
+
+weekly.addEventListener('click', weeklyFunc);
+
+function weeklyFunc() {
+  workTimeCurrent.textContent = '32hrs';
+  workTimePrevious.textContent = 'Last Week - 36hrs';
+
+  playTimeCurrent.textContent = '10hrs';
+  playTimePrevious.textContent = 'Last Week - 8hrs';
+
+  studyTimeCurrent.textContent = '4hrs';
+  studyTimePrevious.textContent = 'Last Week - 7hrs';
+
+  exerciseTimeCurrent.textContent = '4hrs';
+  exerciseTimePrevious.textContent = 'Last Week - 5hrs';
+
+  socialTimeCurrent.textContent = '5hrs';
+  socialTimePrevious.textContent = 'Last Week - 10hrs';
+
+  selfCareTimeCurrent.textContent = '2hrs';
+  selfCareTimePrevious.textContent = 'Last Week - 2hrs';
+}
+
+monthly.addEventListener('click', monthlyFunc);
+
+function monthlyFunc() {
+  workTimeCurrent.textContent = '103hrs';
+  workTimePrevious.textContent = 'Last Month - 128hrs';
+
+  playTimeCurrent.textContent = '23hrs';
+  playTimePrevious.textContent = 'Last Month - 29hrs';
+
+  studyTimeCurrent.textContent = '13hrs';
+  studyTimePrevious.textContent = 'Last Month - 19hrs';
+
+  exerciseTimeCurrent.textContent = '11hrs';
+  exerciseTimePrevious.textContent = 'Last Month - 18hrs';
+
+  socialTimeCurrent.textContent = '21hrs';
+  socialTimePrevious.textContent = 'Last Month - 23hrs';
+
+  selfCareTimeCurrent.textContent = '7hrs';
+  selfCareTimePrevious.textContent = 'Last Month - 11hrs';
+}
