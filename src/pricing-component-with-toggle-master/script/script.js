@@ -12,11 +12,11 @@ function toggle() {
       if (monthPayment[i].style.display === 'none') {
         monthPayment[i].style.display = 'block';
         annualPayment[i].style.display = 'none';
-        ball.style.justifyContent = 'flex-end';
+        button.style.justifyContent = 'flex-end';
       } else {
         monthPayment[i].style.display = 'none';
         annualPayment[i].style.display = 'block';
-        ball.style.justifyContent = 'flex-start';
+        button.style.justifyContent = 'flex-start';
       }
     }
   }

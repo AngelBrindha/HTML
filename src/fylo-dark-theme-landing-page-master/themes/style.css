@@ -1,0 +1,348 @@
+:root {
+ --Dark-Blue: hsl(217, 28%, 15%);
+ --Dark-Blue1: hsl(218, 28%, 13%);
+ --Dark-Blue2: hsl(216, 53%, 9%);
+ --Dark-Blue3: hsl(219, 30%, 18%);
+ --cyan: hsl(176, 68%, 64%);
+ --btn-hover: #8bdbe4;
+ --blue: hsl(198, 60%, 50%);
+ --light-red: hsl(0, 100%, 63%);
+ --White: hsl(0, 0%, 100%);
+ --offwhite: hsl(210, 4%, 67%);
+ --p-text: #b4b8c1;
+    }
+    
+    * {
+ box-sizing: border-box;
+ margin: 0;
+ padding: 0;
+    }
+    
+    body {
+ font-size: 14px;
+ line-height: 20px;
+ color: var(--White);
+ text-align: center;
+ font-family: 'Open Sans', sans-serif;
+    }
+    
+    .container {
+ max-width: 1440px;
+ width: 100%;
+ margin: 0 auto;
+ padding: 0;
+    }
+    p,
+    ul {
+ color: var(--p-text);
+    }
+    .header-section {
+ position: sticky;
+ top: 0;
+ right: 0;
+ left: 0;
+ z-index: 1;
+ padding: 20px 0;
+ background-color: var(--Dark-Blue1);
+    }
+    .header {
+ width: 90%;
+ margin: 0 auto;
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+    }
+    .header ul {
+ color: var(--offwhite);
+ list-style: none;
+ display: flex;
+ justify-content: space-around;
+    }
+    .header ul li {
+ margin: 0 0 0 40px;
+ cursor: pointer;
+    }
+    .header ul li:hover {
+ color: var(--White);
+ text-decoration: underline;
+    }
+    .main {
+ background-color: var(--Dark-Blue1);
+    }
+    .banner {
+ background-image: linear-gradient(
+ to bottom,
+ var(--Dark-Blue1),
+ var(--Dark-Blue3)
+ );
+    }
+    .getstarted {
+ background-image: url('../images/bg-curvy-desktop.svg');
+ background-repeat: no-repeat;
+ background-position: bottom;
+ background-size: contain;
+ padding: 50px;
+    }
+    .content {
+ width: 60%;
+ margin: 0 auto;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+    }
+    .content img {
+ margin-bottom: 30px;
+    }
+    h1,
+    h3 {
+ font-size: 40px;
+ line-height: 50px;
+ margin-bottom: 20px;
+ font-family: 'Raleway', sans-serif;
+    }
+    .content p {
+ font-size: 18px;
+ font-weight: 400;
+ width: 71%;
+ line-height: 30px;
+ margin: 40px;
+    }
+    .button {
+ background: var(--blue);
+ background-image: linear-gradient(to bottom right, var(--cyan), var(--blue));
+ border: 1px solid var(--blue);
+ color: var(--White);
+ padding: 15px 100px;
+ border-radius: 25px;
+ font-family: 'Raleway', sans-serif;
+ font-size: 16px;
+ font-weight: 700;
+ margin-bottom: 110px;
+ cursor: pointer;
+    }
+    .button:hover,
+    .button1:hover {
+ background: var(--btn-hover);
+ border: 1px solid var(--blue);
+    }
+    .sec-4 {
+ width: 75%;
+ margin: 0 auto;
+ display: flex;
+ flex-wrap: wrap;
+    }
+    .fea-1 {
+ width: 37%;
+ margin: 40px auto;
+    }
+    .fea-1 img {
+ margin-bottom: 20px;
+    }
+    .security {
+ margin-bottom: 10px !important;
+    }
+    h2 {
+ font-family: 'Raleway', sans-serif;
+ margin-bottom: 10px;
+    }
+    .productive {
+ width: 90%;
+ margin: 0 auto;
+ padding: 50px 0;
+    }
+    .stand {
+ display: flex;
+ align-items: center;
+    }
+    .stand img {
+ width: 45%;
+ margin: 0 auto;
+    }
+    .text {
+ width: 40%;
+ margin: 0 auto;
+ text-align: left;
+    }
+    .arrow {
+ display: flex;
+ width: 33%;
+ border-bottom: 1px solid var(--cyan);
+ padding-bottom: 4px;
+ cursor: pointer;
+    }
+    .arrow p {
+ color: var(--cyan);
+    }
+    .arrow:hover {
+ border-color: var(--p-text);
+    }
+    .arrow p:hover {
+ color: var(--p-text);
+    }
+    .arrow img {
+ width: 12%;
+    }
+    .clients {
+ width: 80%;
+ margin: 0 auto;
+ padding: 0 0;
+ text-align: justify;
+ background-image: url('../images/bg-quotes.png');
+ background-repeat: no-repeat;
+    }
+    .c-info {
+ display: flex;
+ align-items: center;
+ margin: 50px auto 0 auto;
+    }
+    .response {
+ width: 31%;
+ margin: 33px auto 0 auto;
+ padding: 35px 20px 20px 20px;
+ background-color: var(--Dark-Blue3);
+ border-radius: 3px;
+    }
+    .e-d {
+ margin-top: 30px;
+ display: flex;
+ align-items: center;
+    }
+    .e-d img {
+ width: 10%;
+ border-radius: 100%;
+    }
+    .e-d p {
+ margin-left: 10px;
+    }
+    .e-d p strong {
+ color: var(--White);
+    }
+    .sec-email {
+ padding: 150px;
+ position: relative;
+    }
+    .text-email {
+ position: absolute;
+ bottom: -127px;
+ right: 0;
+ left: 0;
+ width: 71%;
+ margin: 0 auto;
+ background-color: var(--Dark-Blue);
+ padding: 30px 60px 33px 60px;
+ border-radius: 3px;
+    }
+    .mail {
+ width: 100%;
+ margin: 40px auto 0 auto;
+ display: flex;
+ justify-content: space-between;
+    }
+    .button1 {
+ width: 30%;
+ background-image: linear-gradient(to bottom right, var(--cyan), var(--blue));
+ border: 1px solid var(--blue);
+ color: var(--White);
+ padding: 15px;
+ border-radius: 25px;
+ font-family: 'Raleway', sans-serif;
+ font-size: 16px;
+ font-weight: 700;
+ cursor: pointer;
+    }
+    input {
+ width: 65%;
+ padding: 17px 35px;
+ border: 1px solid var(--White);
+ border-radius: 25px;
+    }
+    .error-text {
+ position: absolute;
+ bottom: 10px;
+ left: 95px;
+ color: red;
+    }
+    .footer {
+ background-color: var(--Dark-Blue2);
+ padding: 160px 0 40px 0;
+    }
+    .f-img {
+ width: 175px;
+ margin: 0 0 25px 70px;
+    }
+    .f-d {
+ width: 90%;
+ margin: 0 auto;
+ display: flex;
+ align-items: flex-start;
+ justify-content: space-between;
+    }
+    .location {
+ width: 25%;
+ display: flex;
+ align-items: flex-start;
+ text-align: justify;
+    }
+    .location p {
+ margin-left: 20px;
+    }
+    .contact {
+ width: 16%;
+ display: flex;
+ flex-direction: column;
+    }
+    .contact div {
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+ margin-bottom: 17px;
+ cursor: pointer;
+    }
+    .f-menu {
+ width: 18%;
+ display: flex;
+ justify-content: space-between;
+ text-align: left;
+    }
+    .f-menu ul {
+ display: flex;
+ flex-direction: column;
+ justify-content: flex-start;
+ list-style: none;
+    }
+    .f-menu ul li {
+ margin-bottom: 10px;
+ cursor: pointer;
+    }
+    .f-menu ul li:hover {
+ color: var(--White);
+    }
+    .f-social {
+ width: 10%;
+ display: flex;
+ justify-content: center;
+    }
+    .f-social ul {
+ width: 100%;
+ display: flex;
+ justify-content: space-between;
+ list-style: none;
+    }
+    .f-social ul li {
+ width: 25%;
+ border: 1px solid var(--White);
+ padding: 5px;
+ border-radius: 100%;
+ cursor: pointer;
+    }
+    .f-social ul li:hover {
+ color: var(--cyan);
+ border-color: var(--cyan);
+    }
+ .error-text {
+        display: none;
+    }
+
+ .mail.error .error-text {
+	display: block;
+}
