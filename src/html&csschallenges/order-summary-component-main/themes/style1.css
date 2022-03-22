@@ -104,7 +104,7 @@ body{
 .music-img {
     width: 3.5rem;
     height: 3rem;
-    background-image: url("../order-summary-component-main/images/icon-music.svg");
+    background-image: url("../../order-summary-component-main/images/icon-music.svg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
