@@ -1,78 +1,78 @@
 :root {
   --Blue: hsl(223, 87%, 63%);
-  --Pale-Blue: hsl(223, 100%, 88%);
   --Light-Red: hsl(354, 100%, 66%);
-  --ray: hsl(0, 0%, 59%);
+  --Pale-Blue: hsl(223, 100%, 88%);
   --Very-DarkBlue: hsl(209, 33%, 12%);
   --main-font: 'Libre Franklin', sans-serif;
+  --ray: hsl(0, 0%, 59%);
 }
 * {
   box-sizing: border-box;
+  font-family: var(--main-font);
   margin: 0;
   padding: 0;
-  font-family: var(--main-font);
 }
 .logo {
   margin: 50px 0 10px 650px;
 }
 .head h1 {
-  margin-left: 500px;
   margin-bottom: 10px;
+  margin-left: 500px;
 }
 .head h1 span {
   color: var(--ray);
   font-weight: 500;
 }
 .head h3 {
-  margin-left: 550px;
   color: var(--Very-DarkBlue);
   margin-bottom: 18px;
+  margin-left: 550px;
 }
 .dashboard img {
-  width: 600px;
   margin-left: 420px;
   margin-top: 20px;
+  width: 600px;
 }
 .mail {
   display: flex;
   margin-left: 450px;
 }
 .mail input {
-  width: 280px;
-  height: 50px;
   border-radius: 25px;
+  border: 1px solid var(--Pale-Blue);
+  height: 50px;
   margin-right: 20px;
   outline: none;
-  border: 1px solid var(--Pale-Blue);
   padding: 15px;
+  width: 280px;
 }
 .mail input::placeholder {
   color: var(--Pale-Blue);
 }
 .mail button {
-  width: 150px;
-  height: 45px;
   background-color: var(--Blue);
-  color: white;
-  outline: none;
   border-radius: 25px;
   border: 2px solid var(--Blue);
   box-shadow: 0px 2px 4px var(--Pale-Blue);
-  font-size: 16px;
+  color: white;
   cursor: pointer;
+  font-size: 16px;
+  height: 45px;
+  outline: none;
+  width: 150px;
 }
 .icon {
   display: flex;
-  margin-left: 650px;
   margin-bottom: 10px;
+  margin-left: 650px;
 }
 .icon i {
-  width: 30px;
-  color: var(--Blue);
-  border: 1px solid var(--Pale-Blue);
   border-radius: 50%;
-  padding: 8px;
+  border: 1px solid var(--Pale-Blue);
+  color: var(--Blue);
   margin: 0 10px;
+  padding: 8px;
+  width: 30px;
 }
 i:hover {
   background-color: var(--Blue);
@@ -82,15 +82,15 @@ i:hover {
 .rights {
   color: var(--ray);
   font-size: 12px;
-  margin-left: 630px;
   margin-bottom: 10px;
+  margin-left: 630px;
 }
 .error-text {
   color: var(--Light-Red);
-  font-size: 12px;
-  margin-top: 60px;
-  margin-left: -430px;
   display: none;
+  font-size: 12px;
+  margin-left: -430px;
+  margin-top: 60px;
 }
 .mail.error input {
   border: 2px solid var(--Light-Red);
@@ -98,7 +98,6 @@ i:hover {
 .mail.error .error-text {
   display: block;
 }
-
 @media only screen and (max-width: 783px) {
   main {
     display: flex;
@@ -108,16 +107,16 @@ i:hover {
     margin: 50px 0 10px 70px;
   }
   .head h1 {
-    margin-left: 70px;
     margin-bottom: 10px;
+    margin-left: 70px;
   }
   .head h3 {
     margin-left: 70px;
   }
   .dashboard img {
-    width: 350px;
     margin-left: 20px;
     margin-top: 80px;
+    width: 350px;
   }
   .mail {
     display: flex;
@@ -125,24 +124,24 @@ i:hover {
     margin-left: 50px;
   }
   .mail input {
-    width: 300px;
     height: 50px;
     margin-bottom: 20px;
+    width: 300px;
   }
   .mail button {
-    width: 300px;
     height: 45px;
+    width: 300px;
   }
   .icon {
-    margin-left: 120px;
     margin-bottom: 10px;
+    margin-left: 120px;
   }
   .rights {
-    margin-left: 90px;
     margin-bottom: 10px;
+    margin-left: 90px;
   }
   .error-text {
-    margin-top: -60px;
     margin-left: 10px;
+    margin-top: -60px;
   }
 }

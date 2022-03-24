@@ -1,248 +1,243 @@
 :root {
-    --btn-box-shadow: 5px 10px 20px hsl(245,75%,90%);
-    --Dark-GrayishBlue: hsl(210, 10%, 33%);
-    --Grayish-Blue: hsl(201, 11%, 66%);
-    --Light-Blue: hsl(233, 100%, 69%);
-    --main-font:"Bai Jamjuree",sans-serif;
-    --Strong-Cyan: hsl(171, 66%, 44%);
-
+  --Dark-GrayishBlue: hsl(210, 10%, 33%);
+  --Grayish-Blue: hsl(201, 11%, 66%);
+  --Light-Blue: hsl(233, 100%, 69%);
+  --Strong-Cyan: hsl(171, 66%, 44%);
+  --btn-box-shadow: 5px 10px 20px hsl(245, 75%, 90%);
+  --main-font: 'Bai Jamjuree', sans-serif;
 }
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 body {
-    align-items: center;
-    background-image: url(../clipboard-landing-page-master/images/bg-header-desktop.png);
-    background-repeat: no-repeat;
-    font-family: var(--main-font);
-    justify-content: center;
-    margin: 100px;
+  align-items: center;
+  background-image: url(../clipboard-landing-page-master/images/bg-header-desktop.png);
+  background-repeat: no-repeat;
+  font-family: var(--main-font);
+  justify-content: center;
+  margin: 100px;
 }
-.logo{  
-    margin-left: 500px;
+.logo {
+  margin-left: 500px;
 }
-
-.start h1{
-    align-items: center;
-    color: var(--Dark-GrayishBlue);
-    font-size: 35px;
-    justify-content: center;
-    margin: 50px 0px 50px 300px;
+.start h1 {
+  align-items: center;
+  color: var(--Dark-GrayishBlue);
+  font-size: 35px;
+  justify-content: center;
+  margin: 50px 0px 50px 300px;
 }
 .start p {
-    color: var(--Grayish-Blue);
-    margin: -20px 150px 50px 300px;
-    word-spacing: 5px;
+  color: var(--Grayish-Blue);
+  margin: -20px 150px 50px 300px;
+  word-spacing: 5px;
 }
 .start span {
-    line-height: 1; 
-    margin-left: 140px;
+  line-height: 1;
+  margin-left: 140px;
 }
 .ios {
-    background-color: var(--Strong-Cyan);
-    border: transparent;
-    border-radius: 25px;
-    box-shadow: var(--btn-box-shadow);
-    color: white;
-    font-size: 1rem;
-    font-weight: 700;
-    margin-top: -2rem;
-    margin-left: 350px;
-    margin-right: 20px;
-    padding: 1rem;
-    width: 20%;
+  background-color: var(--Strong-Cyan);
+  border-radius: 25px;
+  border: transparent;
+  box-shadow: var(--btn-box-shadow);
+  color: white;
+  font-size: 1rem;
+  font-weight: 700;
+  margin-left: 350px;
+  margin-right: 20px;
+  margin-top: -2rem;
+  padding: 1rem;
+  width: 20%;
 }
 .mac {
-    background-color: var(--Light-Blue);
-    border-radius: 25px;
-    border: transparent;
-    box-shadow: var(--btn-box-shadow);
-    color: white;
-    font-size: 1rem;
-    font-weight: 700;
-    margin-top: -2rem;
-    padding: 1rem;
-    width: 20%;
+  background-color: var(--Light-Blue);
+  border-radius: 25px;
+  border: transparent;
+  box-shadow: var(--btn-box-shadow);
+  color: white;
+  font-size: 1rem;
+  font-weight: 700;
+  margin-top: -2rem;
+  padding: 1rem;
+  width: 20%;
 }
 .ios:hover,
 .mac:hover {
-    color: blue;
-    cursor: pointer;
+  color: blue;
+  cursor: pointer;
 }
-.middle1 h2{
-    align-items: center;
-    color: var(--Dark-GrayishBlue);
-    font-size: 30px;
-    justify-content: center;
-    margin: 50px 0px 50px 400px;
+.middle1 h2 {
+  align-items: center;
+  color: var(--Dark-GrayishBlue);
+  font-size: 30px;
+  justify-content: center;
+  margin: 50px 0px 50px 400px;
 }
-.middle1 p{
-    color: var(--Grayish-Blue);
-    margin: -20px 160px 50px 300px;
-    word-spacing: 5px;
+.middle1 p {
+  color: var(--Grayish-Blue);
+  margin: -20px 160px 50px 300px;
+  word-spacing: 5px;
 }
-.middle1 span{
-    line-height: 1;
-    margin-left: 190px;
+.middle1 span {
+  line-height: 1;
+  margin-left: 190px;
 }
 .middle2 {
-    display: flex;
-    margin-left: -120px;
+  display: flex;
+  margin-left: -120px;
 }
 .desk-text {
-    margin: 30px 10px 10px 30px;
+  margin: 30px 10px 10px 30px;
 }
 .desk-text h3 {
-    color: var(--Dark-GrayishBlue);
-    margin: 20px 10px 10px 30px;
+  color: var(--Dark-GrayishBlue);
+  margin: 20px 10px 10px 30px;
 }
 .desk-text p {
-    color: var(--Grayish-Blue);
-    line-height: 1.5;
-    margin: 20px 10px 10px 30px;
+  color: var(--Grayish-Blue);
+  line-height: 1.5;
+  margin: 20px 10px 10px 30px;
 }
-.middle3 h2{
-    align-items: center;
-    color: var(--Dark-GrayishBlue);
-    font-size: 30px;
-    justify-content: center;
-    margin: 50px 0px 50px 400px;
+.middle3 h2 {
+  align-items: center;
+  color: var(--Dark-GrayishBlue);
+  font-size: 30px;
+  justify-content: center;
+  margin: 50px 0px 50px 400px;
 }
-.middle3 p{
-    color: var(--Grayish-Blue);
-    margin: -20px 160px 50px 300px;
-    word-spacing: 5px;
+.middle3 p {
+  color: var(--Grayish-Blue);
+  margin: -20px 160px 50px 300px;
+  word-spacing: 5px;
 }
-.middle3 span{
-    line-height: 1;
-    margin-left: 190px;
+.middle3 span {
+  line-height: 1;
+  margin-left: 190px;
 }
 .middle3 img {
-    margin-left: 150px;
+  margin-left: 150px;
 }
-.middle4 h2{
-    align-items: center;
-    color: var(--Dark-GrayishBlue);
-    font-size: 30px;
-    justify-content: center;
-    margin: 50px 0px 50px 400px;
+.middle4 h2 {
+  align-items: center;
+  color: var(--Dark-GrayishBlue);
+  font-size: 30px;
+  justify-content: center;
+  margin: 50px 0px 50px 400px;
 }
-.middle4 p{
-    color: var(--Grayish-Blue);
-    margin: -20px 160px 50px 430px;
-    word-spacing: 5px;
+.middle4 p {
+  color: var(--Grayish-Blue);
+  margin: -20px 160px 50px 430px;
+  word-spacing: 5px;
 }
 .middle5 {
-    display: flex;
-    flex-direction: row;
+  display: flex;
+  flex-direction: row;
 }
-.middle5 img{
-    margin-left: 270px;
+.middle5 img {
+  margin-left: 270px;
 }
 .middle6 {
-    display: flex;
-    flex-direction: row;
-    margin-left: -30px;
-    margin-top: 30px;
-    
+  display: flex;
+  flex-direction: row;
+  margin-left: -30px;
+  margin-top: 30px;
 }
-.middle6 .black1{
-    margin: 5px 80px 5px 250px;
+.middle6 .black1 {
+  margin: 5px 80px 5px 250px;
 }
-.middle6 .text1{
-    margin: 5px 60px 5px -20px;
+.middle6 .text1 {
+  margin: 5px 60px 5px -20px;
 }
-.middle6 .preview1{
-    margin: 5px 80px 5px 20px;
+.middle6 .preview1 {
+  margin: 5px 80px 5px 20px;
 }
 .middle6 h3 {
-    color: var(--Dark-GrayishBlue);
-    margin-bottom: 30px;
+  color: var(--Dark-GrayishBlue);
+  margin-bottom: 30px;
 }
 .middle6 p {
-    color: var(--Grayish-Blue);
-    line-height: 1.5;
-    margin-left: -40px;
-    
+  color: var(--Grayish-Blue);
+  line-height: 1.5;
+  margin-left: -40px;
 }
 .icons {
-    display: flex;
+  display: flex;
 }
 .google,
 .ibm,
 .micro,
 .hp,
-.vector{
-    margin: 100px 50px 100px 40px;
+.vector {
+  margin: 100px 50px 100px 40px;
 }
-.end h2{
-    align-items: center;
-    color: var(--Dark-GrayishBlue);
-    font-size: 30px;
-    justify-content: center;
-    margin: 50px 0px 50px 400px;
+.end h2 {
+  align-items: center;
+  color: var(--Dark-GrayishBlue);
+  font-size: 30px;
+  justify-content: center;
+  margin: 50px 0px 50px 400px;
 }
-.end p{
-    color: var(--Grayish-Blue);
-    margin: -20px 160px 50px 300px;
-    word-spacing: 5px;
+.end p {
+  color: var(--Grayish-Blue);
+  margin: -20px 160px 50px 300px;
+  word-spacing: 5px;
 }
-.end span{
-    line-height: 1;
-    margin-left: 190px;
+.end span {
+  line-height: 1;
+  margin-left: 190px;
 }
 footer {
-    background-color: rgb(234, 250, 250);
-    display:flex;
-    margin: 200px -100px -150px -100px;
+  background-color: rgb(234, 250, 250);
+  display: flex;
+  margin: 200px -100px -150px -100px;
 }
-.foot-img{
-    margin: 100px;
-    width: 40px;
+.foot-img {
+  margin: 100px;
+  width: 40px;
 }
 .foot {
-    color: var(--Grayish-Blue);
-    cursor: pointer;
-    display: flex;
-    flex-direction: row;
-    margin: 100px;
-    margin-left: -40px;
+  color: var(--Grayish-Blue);
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  margin-left: -40px;
+  margin: 100px;
 }
 .symbol {
-    cursor: pointer;
-    display: flex;
-    margin-top: 120px;
-    margin-left: 100px;
+  cursor: pointer;
+  display: flex;
+  margin-left: 100px;
+  margin-top: 120px;
 }
 .facebook {
-    margin-left: 20px;
-    margin-right: 10px;
+  margin-left: 20px;
+  margin-right: 10px;
 }
 .twitter {
-    margin-left: 10px;
-    margin-right: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 .insta {
-    margin-left: 10px;
-    margin-right: 30px;
+  margin-left: 10px;
+  margin-right: 30px;
 }
 .one,
 .two,
 .three {
-    font-size: 10px;
-    line-height: 3;
-    margin: 0px 60px 0px 100px;
+  font-size: 10px;
+  line-height: 3;
+  margin: 0px 60px 0px 100px;
 }
 .foot:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 .attribution {
-    font-size: 11px;
-    text-align: center;
-  }
-
-  .attribution a {
-    color: hsl(228, 45%, 44%);
-  }
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}

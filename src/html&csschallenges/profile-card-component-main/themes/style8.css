@@ -1,88 +1,84 @@
 :root {
-    --main-font: "Kumbh Sans", sans-serif;
-    --Dark-cyan: hsl(185, 75%, 39%);
-    --Verydarkdesaturated-blue: hsl(229, 23%, 23%);
-    --Darkgrayish-blue: hsl(227, 10%, 46%);
-    --Dark-gray: hsl(0, 0%, 59%);
-
+  --Dark-cyan: hsl(185, 75%, 39%);
+  --Dark-gray: hsl(0, 0%, 59%);
+  --Darkgrayish-blue: hsl(227, 10%, 46%);
+  --Verydarkdesaturated-blue: hsl(229, 23%, 23%);
+  --main-font: 'Kumbh Sans', sans-serif;
 }
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
-html, body{
-    overflow-x: hidden;
+html,
+body {
+  overflow-x: hidden;
 }
-body{
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    font-family: var(--main-font);
-    justify-content: center;
-    align-items: center;
-    background-color: var(--Dark-cyan);
-    background-repeat: no-repeat;
-    background-image: url(../profile-card-component-main/images/bg-pattern-top.svg), 
+body {
+  align-items: center;
+  background-color: var(--Dark-cyan);
+  background-image: url(../profile-card-component-main/images/bg-pattern-top.svg),
     url(../profile-card-component-main/images/bg-pattern-bottom.svg);
-    background-position: -30vw -65vh, 50vw 50vh;
+  background-position: -30vw -65vh, 50vw 50vh;
+  background-repeat: no-repeat;
+  display: flex;
+  font-family: var(--main-font);
+  height: 100vh;
+  justify-content: center;
+  width: 100%;
 }
 .container {
-    height: 400px;
-    width: 350px;
-    background-color: white;
-    border-radius: 15px;
-    
+  background-color: white;
+  border-radius: 15px;
+  height: 400px;
+  width: 350px;
 }
 .header-image {
-    border-radius: 15px 15px 0px 0px;
+  border-radius: 15px 15px 0px 0px;
 }
 .victor-image {
-    border-radius: 50%;
-    position: relative;
-    top: -50px;
-    left: 120px;
-    cursor: pointer;
+  border-radius: 50%;
+  cursor: pointer;
+  left: 120px;
+  position: relative;
+  top: -50px;
 }
-
 .name {
-    text-align: center;
-    margin-top: -30px;
-    color: var(--Verydarkdesaturated-blue);
+  color: var(--Verydarkdesaturated-blue);
+  margin-top: -30px;
+  text-align: center;
 }
 .name span {
-    color: var(--Darkgrayish-blue);
-    margin-left: 10px;
+  color: var(--Darkgrayish-blue);
+  margin-left: 10px;
 }
 .location {
-    color: var(--Darkgrayish-blue);
-    margin-top: 10px;
-    margin-bottom: 30px;
+  color: var(--Darkgrayish-blue);
+  margin-bottom: 30px;
+  margin-top: 10px;
 }
 .template {
-    border-top: 2px solid hsl(0, 0%, 59%);
-    padding: 10p 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
+  align-items: center;
+  border-top: 2px solid hsl(0, 0%, 59%);
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  padding: 10p 20px;
 }
-.template b{
-    color: var(--Verydarkdesaturated-blue);
-    font-weight: 1000;
+.template b {
+  color: var(--Verydarkdesaturated-blue);
+  font-weight: 1000;
 }
-.template p{
-    color: var(--Darkgrayish-blue);
-    margin-top: 2px;
+.template p {
+  color: var(--Darkgrayish-blue);
+  margin-top: 2px;
 }
 .follow {
-    margin: 30px 30px 10px 0px;
+  margin: 30px 30px 10px 0px;
 }
-.like{
-    margin: 30px 40px 10px 20px;
-
+.like {
+  margin: 30px 40px 10px 20px;
 }
 .photo {
-    margin: 30px 30px 10px 20px;
-
+  margin: 30px 30px 10px 20px;
 }

@@ -1,11 +1,11 @@
 :root {
-  --font-family: 'Barlow Semi Condensed', sans-serif;
   --Light-gray: hsl(0, 0%, 81%);
   --Light-grayish-blue: hsl(210, 46%, 95%);
   --Moderate-violet: hsl(263, 55%, 52%);
-  --Very-dark-grayish-blue: hsl(210, 9%, 39%);
   --Very-dark-blackish-blue: hsl(219, 29%, 14%);
+  --Very-dark-grayish-blue: hsl(210, 9%, 39%);
   --White: hsl(0, 0%, 100%);
+  --font-family: 'Barlow Semi Condensed', sans-serif;
 }
 * {
   box-sizing: border-box;
@@ -14,25 +14,26 @@
 }
 body {
   font-family: var(--font-family);
-  padding-top: 2.5rem;
   padding-bottom: 1rem;
+  padding-top: 2.5rem;
 }
 .container {
   background-color: var(--Light-grayish-blue);
   display: grid;
+  gap: 20px;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: auto;
+  height: auto;
+  margin-bottom: 1.3rem;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1400px;
+  padding: 5rem;
+
   grid-template-areas:
     'daniel daniel jonathan kira'
     'daniel daniel jonathan kira'
     'jeanetta patrick patrick kira';
-  gap: 20px;
-  height: auto;
-  max-width: 1400px;
-  margin-bottom: 1.3rem;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 5rem;
 }
 .daniel,
 .jonathan,
@@ -42,18 +43,16 @@ body {
   border-radius: 5px;
   padding: 2rem;
 }
-
 .daniel {
   background-color: var(--Moderate-violet);
   background-image: url('../images/bg-pattern-quotation.svg');
-  background-repeat: no-repeat;
-  background-position: top right;
-  background-size: 100px;
   background-position-x: 80%;
+  background-position: top right;
+  background-repeat: no-repeat;
+  background-size: 100px;
   color: var(--White);
   grid-area: daniel;
 }
-
 .user-details {
   align-items: center;
   color: var(--Light-gray);
@@ -62,7 +61,6 @@ body {
   gap: 30px;
   margin-bottom: 10px;
 }
-
 .user-details img {
   border-radius: 50%;
 }
@@ -90,7 +88,6 @@ body {
   line-height: 1.5;
   margin-bottom: 1rem;
 }
-
 .jonathan {
   background-color: var(--Very-dark-grayish-blue);
   color: var(--White);
@@ -126,6 +123,7 @@ body {
   .container {
     grid-template-columns: auto;
     grid-template-rows: repeat(4, 1fr);
+
     grid-template-areas:
       'daniel'
       'jonathan'

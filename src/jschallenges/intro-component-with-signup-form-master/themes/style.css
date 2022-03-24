@@ -1,48 +1,47 @@
 :root {
-  --Red: hsl(0, 100%, 74%);
-  --Green: hsl(154, 59%, 51%);
   --Blue: hsl(248, 32%, 49%);
   --Dark-Blue: hsl(249, 10%, 26%);
   --Grayish-Blue: hsl(246, 25%, 77%);
+  --Green: hsl(154, 59%, 51%);
+  --Red: hsl(0, 100%, 74%);
   --main-font: 'Poppins', sans-serif;
 }
-
 * {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
 .error-icon,
 .error-text {
   display: none;
 }
 html {
-  font-size: 16px;
   font-family: 'Poppins', sans-serif;
+  font-size: 16px;
 }
 #intro {
-  min-height: 100vh;
-  width: 100%;
-  display: flex;
   align-items: center;
-  justify-content: center;
-  background-image: url(./images/bg-intro-desktop.png);
   background-color: var(--Red);
+  background-image: url(./images/bg-intro-desktop.png);
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
   padding: 100px;
+  width: 100%;
 }
 .container {
-  display: flex;
   align-items: center;
-  justify-content: space-between;
+  display: flex;
   flex-direction: row;
-  text-align: center;
-  padding: 0 30px;
-  max-width: 1300px;
+  justify-content: space-between;
   margin: 0 auto;
+  max-width: 1300px;
+  padding: 0 30px;
+  text-align: center;
 }
 .left-col {
-  text-align: left;
   padding-right: 50px;
+  text-align: left;
 }
 .left-col h1 {
   color: white;
@@ -56,51 +55,50 @@ html {
   line-height: 1.9rem;
   margin-right: 20px;
 }
-
 .right-col .top-card {
   background-color: var(--Blue);
-  color: white;
-  padding: 10px;
   border-radius: 15px;
   box-shadow: 0 4px hsla(249, 10%, 26%, 0.404);
-  margin-bottom: 20px;
+  color: white;
   height: 50px;
+  margin-bottom: 20px;
+  padding: 10px;
 }
 .right-col .top-card p {
+  color: var(--Grayish-Blue);
   font-size: 1rem;
   line-height: 2rem;
-  color: var(--Grayish-Blue);
 }
 .right-col .top-card p span {
   color: white;
 }
 .right-col .form-container {
   background-color: white;
-  padding: 40px;
   border-radius: 15px;
   box-shadow: 0 4px hsla(249, 10%, 26%, 0.4);
+  padding: 40px;
   width: 500px;
 }
 .field-group {
-  position: relative;
   margin-bottom: 25px;
+  position: relative;
 }
 .right-col label {
   display: none;
 }
 .right-col input,
 .right-col button {
-  width: 100%;
-  height: 50px;
-  margin-bottom: 5px;
   border-radius: 10px;
   border: 1px solid hsl(246, 25%, 77%);
-  padding-left: 20px;
-  outline: none;
   color: black;
   font-family: 'Poppins', sans-serif;
   font-size: 18px;
   font-weight: 500;
+  height: 50px;
+  margin-bottom: 5px;
+  outline: none;
+  padding-left: 20px;
+  width: 100%;
 }
 .right-col input:focus {
   border: 1.5px solid var(--Blue);
@@ -113,41 +111,41 @@ html {
   height: 60px;
 }
 .right-col button {
-  cursor: pointer;
   background-color: var(--Green);
+  border: none;
   box-shadow: 0px 4px var(--Green);
   color: white;
-  font-weight: 500;
+  cursor: pointer;
   font-size: 1rem;
-  text-transform: uppercase;
+  font-weight: 500;
   letter-spacing: 1px;
-  border: none;
+  text-transform: uppercase;
 }
 .right-col button:hover {
   background-color: var(--Green);
 }
 .right-col .form-footer {
-  margin-top: 20px;
   color: hsl(246, 25%, 77%);
   font-size: 10px;
+  margin-top: 20px;
 }
 .right-col .form-footer span {
   color: var(--Red);
   font-weight: 700;
 }
 .error-text {
-  text-align: right;
   bottom: 0;
-  right: 0;
+  color: var(--Red);
   font-size: 12px;
   font-style: italic;
-  color: var(--Red);
   font-weight: 500;
+  right: 0;
+  text-align: right;
 }
 .error-icon {
   position: absolute;
-  top: 0;
   right: 20px;
+  top: 0;
   top: 28%;
 }
 .field-group.error .error-text,
@@ -167,8 +165,8 @@ html {
     text-align: center;
   }
   .left-col p {
-    text-align: center;
     margin-bottom: 10px;
+    text-align: center;
   }
   .right-col .top-card {
     height: 70px;

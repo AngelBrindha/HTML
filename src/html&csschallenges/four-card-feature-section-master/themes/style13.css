@@ -1,144 +1,138 @@
 :root {
-    --Red: hsl(0, 78%, 62%);
-    --Cyan: hsl(180, 62%, 55%);
-    --Orange: hsl(34, 97%, 64%);
-    --Blue: hsl(212, 86%, 64%);
-    --Very-DarkBlue: hsl(234, 12%, 34%);
-    --Grayish-Blue: hsl(229, 6%, 66%);
-    --Very-LightGray: hsl(0, 0%, 98%);
-    --main-font: "Poppins", sans-serif;
+  --Blue: hsl(212, 86%, 64%);
+  --Cyan: hsl(180, 62%, 55%);
+  --Grayish-Blue: hsl(229, 6%, 66%);
+  --Orange: hsl(34, 97%, 64%);
+  --Red: hsl(0, 78%, 62%);
+  --Very-DarkBlue: hsl(234, 12%, 34%);
+  --Very-LightGray: hsl(0, 0%, 98%);
+  --main-font: 'Poppins', sans-serif;
 }
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
-
 body {
-    background-color: var(--Very-LightGray);
-    font-family: var(--main-font);
+  background-color: var(--Very-LightGray);
+  font-family: var(--main-font);
 }
 .head1 {
-    margin-left: 500px;
-    margin-top: 50px;
-    color: var(--Grayish-Blue);
-    font-size: 33px;
+  color: var(--Grayish-Blue);
+  font-size: 33px;
+  margin-left: 500px;
+  margin-top: 50px;
 }
 .head2 {
-    margin-left: 500px;
-    color: var(--Very-DarkBlue);
+  color: var(--Very-DarkBlue);
+  margin-left: 500px;
 }
 .content {
-    color: var(--Grayish-Blue);
-    padding: 10px 450px;
-    
-    
+  color: var(--Grayish-Blue);
+  padding: 10px 450px;
 }
-span{
-    margin-left: 25px;
+span {
+  margin-left: 25px;
 }
-.container{
-    width: 75%;
-    margin: 80px;
-    display: flex;
-    justify-content: space-between;
-    margin-top: 300px;
-    margin-left: 200px;
+.container {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 200px;
+  margin-top: 300px;
+  margin: 80px;
+  width: 75%;
 }
 .card1 {
-    background: white;
-    border-radius: 10px;
-    margin: auto 0;
-    height: 230px;
-    padding: 20px;
-    width: 350px;
-    border-top: 3px solid var(--Cyan);
-    box-shadow: 0 4px 6px rgb(0, 0, 0,0.25);
-    margin-top: -150px;
-    margin-right: 20px;
-
+  background: white;
+  border-radius: 10px;
+  border-top: 3px solid var(--Cyan);
+  box-shadow: 0 4px 6px rgb(0, 0, 0, 0.25);
+  height: 230px;
+  margin-right: 20px;
+  margin-top: -150px;
+  margin: auto 0;
+  padding: 20px;
+  width: 350px;
 }
 .card1 h2 {
-    color: var(--Very-DarkBlue);
-    margin-bottom: 10px;
+  color: var(--Very-DarkBlue);
+  margin-bottom: 10px;
 }
-.card1 p{
-    color: var(--Grayish-Blue);
-    margin-bottom: 10px;
-    line-height: 1.5;
+.card1 p {
+  color: var(--Grayish-Blue);
+  line-height: 1.5;
+  margin-bottom: 10px;
 }
-.card1 img{
-    padding-left: 200px;
+.card1 img {
+  padding-left: 200px;
 }
 .card2 {
-    background: white;
-    border-radius: 10px;
-    margin: auto 0;
-    height: 230px;
-    padding: 20px;
-    width: 350px;
-    border-top: 3px solid var(--Red);
-    box-shadow: 0 4px 6px rgb(0, 0, 0,0.25);
-    margin-top: -250px;
-
+  background: white;
+  border-radius: 10px;
+  border-top: 3px solid var(--Red);
+  box-shadow: 0 4px 6px rgb(0, 0, 0, 0.25);
+  height: 230px;
+  margin-top: -250px;
+  margin: auto 0;
+  padding: 20px;
+  width: 350px;
 }
 .card2 h2 {
-    color: var(--Very-DarkBlue);
-    margin-bottom: 10px;
+  color: var(--Very-DarkBlue);
+  margin-bottom: 10px;
 }
-.card2 p{
-    color: var(--Grayish-Blue);
-    margin-bottom: 10px;
-    line-height: 1.5;
+.card2 p {
+  color: var(--Grayish-Blue);
+  line-height: 1.5;
+  margin-bottom: 10px;
 }
-.card2 img{
-    padding-left: 200px;
+.card2 img {
+  padding-left: 200px;
 }
 .card3 {
-    background: white;
-    border-radius: 10px;
-    margin: auto 0;
-    height: 230px;
-    padding: 20px;
-    width: 350px;
-    border-top: 3px solid var(--Orange);
-    box-shadow: 0 4px 6px rgb(0, 0, 0,0.25);
-    margin-left: -320px;
-
+  background: white;
+  border-radius: 10px;
+  border-top: 3px solid var(--Orange);
+  box-shadow: 0 4px 6px rgb(0, 0, 0, 0.25);
+  height: 230px;
+  margin-left: -320px;
+  margin: auto 0;
+  padding: 20px;
+  width: 350px;
 }
 .card3 h2 {
-    color: var(--Very-DarkBlue);
-    margin-bottom: 10px;
+  color: var(--Very-DarkBlue);
+  margin-bottom: 10px;
 }
-.card3 p{
-    color: var(--Grayish-Blue);
-    margin-bottom: 10px;
-    line-height: 1.5;
+.card3 p {
+  color: var(--Grayish-Blue);
+  line-height: 1.5;
+  margin-bottom: 10px;
 }
-.card3 img{
-    padding-left: 200px;
+.card3 img {
+  padding-left: 200px;
 }
 .card4 {
-    background: white;
-    border-radius: 10px;
-    margin: auto 0;
-    height: 230px;
-    padding: 20px;
-    width: 350px;
-    border-top: 3px solid var(--Blue);
-    box-shadow: 0 4px 6px rgb(0, 0, 0,0.25);
-    margin-top: -150px;
-    margin-left: 20px;
+  background: white;
+  border-radius: 10px;
+  border-top: 3px solid var(--Blue);
+  box-shadow: 0 4px 6px rgb(0, 0, 0, 0.25);
+  height: 230px;
+  margin-left: 20px;
+  margin-top: -150px;
+  margin: auto 0;
+  padding: 20px;
+  width: 350px;
 }
 .card4 h2 {
-    color: var(--Very-DarkBlue);
-    margin-bottom: 10px;
+  color: var(--Very-DarkBlue);
+  margin-bottom: 10px;
 }
-.card4 p{
-    color: var(--Grayish-Blue);
-    margin-bottom: 10px;
-    line-height: 1.5;
+.card4 p {
+  color: var(--Grayish-Blue);
+  line-height: 1.5;
+  margin-bottom: 10px;
 }
-.card4 img{
-    padding-left: 200px;
+.card4 img {
+  padding-left: 200px;
 }

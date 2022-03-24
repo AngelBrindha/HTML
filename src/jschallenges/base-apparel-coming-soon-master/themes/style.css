@@ -1,8 +1,8 @@
 :root {
-  --Desaturated-Red: hsl(0, 36%, 70%);
   --Dark-GrayishRed: hsl(0, 6%, 24%);
-  --main-font: 'Josefin Sans', sans-serif;
+  --Desaturated-Red: hsl(0, 36%, 70%);
   --Soft-Red: hsl(0, 93%, 68%);
+  --main-font: 'Josefin Sans', sans-serif;
 }
 body {
   background: url(../images/bg-pattern-desktop.svg);
@@ -19,8 +19,8 @@ body {
   padding: 60px;
 }
 .content {
-  margin-right: 180px;
   margin-left: -200px;
+  margin-right: 180px;
   margin-top: 80px;
   padding: 50px;
 }
@@ -60,8 +60,8 @@ body {
   box-shadow: 2px 4px rgb(19, 18, 18, 0.2);
   cursor: pointer;
   height: 50px;
-  margin-top: 20px;
   margin-left: -50px;
+  margin-top: 20px;
   position: absolute;
   width: 80px;
 }
@@ -92,19 +92,19 @@ body {
     margin-left: 20px;
   }
   .logo {
-    padding: 5px;
     margin-top: -800px;
+    padding: 5px;
     position: relative;
   }
   .girl-img img {
-    margin-top: 200px;
     height: 250px;
-    width: 300px;
+    margin-top: 200px;
     position: relative;
+    width: 300px;
   }
   .content {
-    margin-right: 20px;
     margin-left: 20px;
+    margin-right: 20px;
     margin-top: 20px;
     padding: 0px;
   }
@@ -112,21 +112,21 @@ body {
     font-size: 40px;
   }
   .content p {
-    width: 200px;
     margin-bottom: 50px;
+    width: 200px;
   }
   .content input {
     height: 2px;
+    margin-bottom: 50px;
+    margin-top: -10px;
     margin-top: 20px;
     padding: 20px;
     width: 200px;
-    margin-top: -10px;
-    margin-bottom: 50px;
   }
   .content button {
     height: 40px;
-    margin-top: -10px;
     margin-left: -25px;
+    margin-top: -10px;
     width: 60px;
   }
   .error-icon {

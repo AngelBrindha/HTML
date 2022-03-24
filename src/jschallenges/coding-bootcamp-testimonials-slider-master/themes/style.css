@@ -9,34 +9,34 @@
   padding: 0;
 }
 body {
-  background: url(../images/pattern-curve.svg);
-  background-repeat: no-repeat;
   background-position-y: 500px;
+  background-repeat: no-repeat;
+  background: url(../images/pattern-curve.svg);
 }
 .background img {
-  position: absolute;
-  width: 500px;
   margin-left: 800px;
   margin-top: 100px;
+  position: absolute;
+  width: 500px;
 }
 .photo img {
-  position: relative;
-  width: 400px;
   margin-left: 100px;
   margin-top: 150px;
+  position: relative;
+  width: 400px;
 }
 .btn button {
-  position: absolute;
-  width: 100px;
-  height: 50px;
   background-color: white;
-  outline: none;
-  border: none;
   border-radius: 30px;
+  border: none;
   box-shadow: 0 2px 3px black;
+  cursor: pointer;
+  height: 50px;
   margin-left: 880px;
   margin-top: -40px;
-  cursor: pointer;
+  outline: none;
+  position: absolute;
+  width: 100px;
 }
 .prev {
   margin-left: 10px;
@@ -46,22 +46,22 @@ body {
   display: flex;
 }
 .para p {
-  margin-top: 200px;
-  margin-left: 100px;
-  position: relative;
-  width: 600px;
   color: var(--Dark-Blue);
   font-size: 40px;
+  margin-left: 100px;
+  margin-top: 200px;
+  position: relative;
+  width: 600px;
 }
 .quote {
-  position: absolute;
-  margin-top: 200px;
   margin-left: 200px;
+  margin-top: 200px;
+  position: absolute;
 }
 .info {
-  margin-top: 20px;
-  margin-left: 200px;
   display: flex;
+  margin-left: 200px;
+  margin-top: 20px;
 }
 .name {
   color: var(--Dark-Blue);
@@ -71,44 +71,44 @@ body {
   margin-top: 10px;
 }
 .role {
-  position: absolute;
   color: var(--Grayish-Blue);
   font-size: 20px;
   margin-left: 250px;
   margin-top: -20px;
+  position: absolute;
 }
 @media only screen and (max-width: 600px) {
   body {
     background-position-y: 1000px;
   }
   .background img {
-    width: 500px;
     margin-left: 150px;
     margin-top: 50px;
+    width: 500px;
   }
   .photo img {
-    width: 400px;
     margin-left: -350px;
     margin-top: 100px;
+    width: 400px;
   }
   .btn button {
     margin-left: 250px;
     margin-top: -550px;
   }
   .para p {
-    text-align: center;
     margin-top: 550px;
+    text-align: center;
     width: 400px;
   }
   .quote {
-    margin-top: 550px;
     margin-left: 250px;
+    margin-top: 550px;
   }
   .info {
-    margin-top: 20px;
-    margin-left: 200px;
     display: flex;
     flex-direction: column;
+    margin-left: 200px;
+    margin-top: 20px;
     text-align: center;
   }
   .name {
