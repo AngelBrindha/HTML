@@ -1,159 +1,180 @@
- :root {
-    --Red: hsl(0, 100%, 74%);
-    --Green: hsl(154, 59%, 51%);
-    --Blue: hsl(248, 32%, 49%);
-    --Dark-Blue: hsl(249, 10%, 26%);
-    --Grayish-Blue: hsl(246, 25%, 77%);
-    --main-font: "Poppins", sans-serif;
+:root {
+  --Red: hsl(0, 100%, 74%);
+  --Green: hsl(154, 59%, 51%);
+  --Blue: hsl(248, 32%, 49%);
+  --Dark-Blue: hsl(249, 10%, 26%);
+  --Grayish-Blue: hsl(246, 25%, 77%);
+  --main-font: 'Poppins', sans-serif;
 }
- 
+
 * {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 .error-icon,
 .error-text {
-	display: none;
+  display: none;
 }
 html {
-	font-size: 16px;
-	font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  font-family: 'Poppins', sans-serif;
 }
 #intro {
-	min-height: 100vh;
-	width: 100%;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	background-image: url(./images/bg-intro-desktop.png);
-	background-color: var(--Red);
-	padding: 100px;
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url(./images/bg-intro-desktop.png);
+  background-color: var(--Red);
+  padding: 100px;
 }
 .container {
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-	flex-direction: row;
-	text-align: center;
-	padding: 0 30px;
-	max-width: 1300px;
-	margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  text-align: center;
+  padding: 0 30px;
+  max-width: 1300px;
+  margin: 0 auto;
 }
 .left-col {
-	text-align: left;
-    padding-right: 50px;
+  text-align: left;
+  padding-right: 50px;
 }
 .left-col h1 {
-	color: white;
-	font-size: 3rem;
-	line-height: 3.5rem;
-	margin-bottom: 2rem;
+  color: white;
+  font-size: 3rem;
+  line-height: 3.5rem;
+  margin-bottom: 2rem;
 }
 .left-col p {
-	color: white;
-	font-size: 1rem;
-	line-height: 1.9rem;
-	margin-right: 20px;
+  color: white;
+  font-size: 1rem;
+  line-height: 1.9rem;
+  margin-right: 20px;
 }
 
 .right-col .top-card {
-	background-color: var(--Blue);
-	color: white;
-	padding: 10px;
-	border-radius: 15px;
-	box-shadow: 0 4px hsla(249, 10%, 26%, 0.404);
-	margin-bottom: 20px;
-    height: 50px;
+  background-color: var(--Blue);
+  color: white;
+  padding: 10px;
+  border-radius: 15px;
+  box-shadow: 0 4px hsla(249, 10%, 26%, 0.404);
+  margin-bottom: 20px;
+  height: 50px;
 }
 .right-col .top-card p {
-	font-size: 1rem;
-	line-height: 2rem;
-	color: var(--Grayish-Blue);
+  font-size: 1rem;
+  line-height: 2rem;
+  color: var(--Grayish-Blue);
 }
 .right-col .top-card p span {
-    color: white;
+  color: white;
 }
 .right-col .form-container {
-	background-color: white;
-	padding: 40px;
-	border-radius: 15px;
-	box-shadow: 0 4px hsla(249, 10%, 26%, 0.4);
-    width: 500px;
+  background-color: white;
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 4px hsla(249, 10%, 26%, 0.4);
+  width: 500px;
 }
 .field-group {
-	position: relative;
-	margin-bottom: 25px;
+  position: relative;
+  margin-bottom: 25px;
 }
 .right-col label {
-	display: none;
+  display: none;
 }
 .right-col input,
 .right-col button {
-	width: 100%;
-	height: 50px;
-	margin-bottom: 5px;
-	border-radius: 10px;
-	border: 1px solid hsl(246, 25%, 77%);
-	padding-left: 20px;
-	outline: none;
-	color: black;
-	font-family: 'Poppins', sans-serif;
-	font-size: 18px;
-	font-weight: 500;
+  width: 100%;
+  height: 50px;
+  margin-bottom: 5px;
+  border-radius: 10px;
+  border: 1px solid hsl(246, 25%, 77%);
+  padding-left: 20px;
+  outline: none;
+  color: black;
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
+  font-weight: 500;
 }
 .right-col input:focus {
-	border: 1.5px solid var(--Blue);
+  border: 1.5px solid var(--Blue);
 }
 .right-col input::placeholder {
-	color: var(--Dark-Blue);
-	font-family: 'Poppins', sans-serif;
-	font-size: 1rem;
-	font-weight: 600;
-    height: 60px;
+  color: var(--Dark-Blue);
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  height: 60px;
 }
 .right-col button {
-	cursor: pointer;
-	background-color: var(--Green);
-	box-shadow: 0px 4px var(--Green);
-	color: white;
-	font-weight: 500;
-	font-size: 1rem;
-	text-transform: uppercase;
-	letter-spacing: 1px;
-	border: none;
+  cursor: pointer;
+  background-color: var(--Green);
+  box-shadow: 0px 4px var(--Green);
+  color: white;
+  font-weight: 500;
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border: none;
 }
 .right-col button:hover {
-	background-color: var(--Green);
+  background-color: var(--Green);
 }
 .right-col .form-footer {
-	margin-top: 20px;
-	color: hsl(246, 25%, 77%);
-    font-size: 10px;
+  margin-top: 20px;
+  color: hsl(246, 25%, 77%);
+  font-size: 10px;
 }
 .right-col .form-footer span {
-	color: var(--Red);
-	font-weight: 700;
+  color: var(--Red);
+  font-weight: 700;
 }
 .error-text {
-	text-align: right;
-	bottom: 0;
-	right: 0;
-	font-size: 12px;
-	font-style: italic;
-	color: var(--Red);
-	font-weight: 500;
+  text-align: right;
+  bottom: 0;
+  right: 0;
+  font-size: 12px;
+  font-style: italic;
+  color: var(--Red);
+  font-weight: 500;
 }
 .error-icon {
-	position: absolute;
-	top: 0;
-	right: 20px;
-	top: 28%;
+  position: absolute;
+  top: 0;
+  right: 20px;
+  top: 28%;
 }
 .field-group.error .error-text,
 .field-group.error .error-icon {
-	display: block;
+  display: block;
 }
 .field-group.error input {
-	border: 2px solid var(--Red);
+  border: 2px solid var(--Red);
+}
+@media only screen and (max-width: 600px) {
+  .container {
+    flex-direction: column;
+    margin-left: 20px;
+  }
+  .left-col h1 {
+    font-size: 2.5rem;
+    text-align: center;
+  }
+  .left-col p {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  .right-col .top-card {
+    height: 70px;
+  }
+  .right-col .form-container {
+    padding: 40px;
+    width: 300px;
+  }
 }

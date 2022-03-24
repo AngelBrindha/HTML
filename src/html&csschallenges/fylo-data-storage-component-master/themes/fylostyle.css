@@ -1,152 +1,191 @@
 :root {
-     --color-1:hsl(6, 100%, 80%);
-     --color-2:hsl(335, 100%, 65%);
-     --Dark-Blue: hsl(228, 56%, 26%);
-     --Grayish-Blue: hsl(229, 7%, 55%);
-     --main-font: "Raleway", sans-serif;
-     --Pale-Blue: hsl(243, 100%, 93%);
-     --VeryDark-Blue: hsl(229, 57%, 11%);
-   
+  --color-1: hsl(6, 100%, 80%);
+  --color-2: hsl(335, 100%, 65%);
+  --Dark-Blue: hsl(228, 56%, 26%);
+  --Grayish-Blue: hsl(229, 7%, 55%);
+  --main-font: 'Raleway', sans-serif;
+  --Pale-Blue: hsl(243, 100%, 93%);
+  --VeryDark-Blue: hsl(229, 57%, 11%);
 }
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
-html, body{
-    overflow-x: hidden;
+html,
+body {
+  overflow-x: hidden;
 }
-body{
-    background-color: var(--VeryDark-Blue);
-    background-image: url("../images/bg-desktop.png");
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: bottom;
-    color: var(--Pale-Blue);
-    font-family: var(--main-font);
-    font-size: 14px;
-    min-height: 100vh;
-    overflow-y: scroll;
+body {
+  background-color: var(--VeryDark-Blue);
+  background-image: url('../images/bg-desktop.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: bottom;
+  color: var(--Pale-Blue);
+  font-family: var(--main-font);
+  font-size: 14px;
+  min-height: 100vh;
+  overflow-y: scroll;
 }
 .container {
-    display: flex;
-    margin: 0 auto;
-    max-width: 1930px;
-    position: relative;
-    width: 100%;
+  display: flex;
+  margin: 0 auto;
+  max-width: 1930px;
+  position: relative;
+  width: 100%;
 }
 
 .left-box {
-    background-color: var(--Dark-Blue);
-    border-radius: 5px 80px 5px 5px;
-    height: 150px;
-    margin-left: 18rem;
-    margin-top: 195px;
-    padding: 30px 20px 20px;
-    width: 20%;
+  background-color: var(--Dark-Blue);
+  border-radius: 5px 80px 5px 5px;
+  height: 150px;
+  margin-left: 18rem;
+  margin-top: 195px;
+  padding: 30px 20px 20px;
+  width: 20%;
 }
 .left-img {
-    display: flex;
-    margin: 0 15px 0 0;
-    padding-top: 20px;
-
+  display: flex;
+  margin: 0 15px 0 0;
+  padding-top: 20px;
 }
 .img1 {
-    background: var(--VeryDark-Blue);
-    border-radius: 10px;
-    margin: 0 15px 0 0;
-    padding: 5px 10px;
-
+  background: var(--VeryDark-Blue);
+  border-radius: 10px;
+  margin: 0 15px 0 0;
+  padding: 5px 10px;
 }
 .img2 {
-    background: var(--VeryDark-Blue);
-    border-radius: 10px;
-    margin: 0 15px 0 0;
-    padding: 5px 10px;
-
+  background: var(--VeryDark-Blue);
+  border-radius: 10px;
+  margin: 0 15px 0 0;
+  padding: 5px 10px;
 }
 .img3 {
-    background: var(--VeryDark-Blue);
-    border-radius: 10px;
-    margin: 0 15px 0 0;
-    padding: 5px 10px;
-
+  background: var(--VeryDark-Blue);
+  border-radius: 10px;
+  margin: 0 15px 0 0;
+  padding: 5px 10px;
 }
 .right-box {
-    background-color: var(--Dark-Blue);
-    border-radius: 5px 5px 5px 5px;
-    color: var(--Grayish-Blue);
-    height: 120px;
-    margin: 0 20px;
-    margin-top: 14rem;
-    padding: 30px 20px 20px;
-    width: 40%;
+  background-color: var(--Dark-Blue);
+  border-radius: 5px 5px 5px 5px;
+  color: var(--Grayish-Blue);
+  height: 120px;
+  margin: 0 20px;
+  margin-top: 14rem;
+  padding: 30px 20px 20px;
+  width: 40%;
 }
 .bold {
-    color: var(--Pale-Blue);
+  color: var(--Pale-Blue);
 }
 .bold-1 {
-    color: var(--Pale-Blue);
-    margin-left: 400px;
+  color: var(--Pale-Blue);
+  margin-left: 400px;
 }
 
 .loading {
-    background: var(--VeryDark-Blue);
-    border-radius: 50px;
-    border: var(--VeryDark-Blue);
-    outline: none;
-    width: 100%;
+  background: var(--VeryDark-Blue);
+  border-radius: 50px;
+  border: var(--VeryDark-Blue);
+  outline: none;
+  width: 100%;
 }
 .pinkgradient {
-    background-image: linear-gradient(to right,hsl(6, 100%, 80%),hsl(335, 100%, 65%));
-    border-radius: 50px;
-    margin-top: 20px;
-    padding: 2px;
-    position: relative;
-    width: 80%;
+  background-image: linear-gradient(
+    to right,
+    hsl(6, 100%, 80%),
+    hsl(335, 100%, 65%)
+  );
+  border-radius: 50px;
+  margin-top: 20px;
+  padding: 2px;
+  position: relative;
+  width: 80%;
 }
 .whitedot {
-    background-color: white;
-    border-radius: 100%;
-    height: 2vmin;
-    left: 96%;
-    position: relative;
-    top: 0;
-    width: 2vmin;
+  background-color: white;
+  border-radius: 100%;
+  height: 2vmin;
+  left: 96%;
+  position: relative;
+  top: 0;
+  width: 2vmin;
 }
 .msg-box {
-    background-color: white;
-    border-radius: 10px 10px 0 10px;
-    font-size: 30px;
-    padding: 10px 5px;
-    position: absolute;
-    right: 280px;
-    top: 200px;
+  background-color: white;
+  border-radius: 10px 10px 0 10px;
+  font-size: 30px;
+  padding: 10px 5px;
+  position: absolute;
+  right: 280px;
+  top: 200px;
 }
 .msg-box::after {
-    border-top: solid 40px white;
-    border-left: solid 50px transparent;
-    border-right: solid 0px transparent;
-    border-bottom: solid 10px transparent;
-    content: ""; 
-    display: block;
-    left: 79px;
-    top: 40px;
-    position: absolute;
-
+  border-top: solid 40px white;
+  border-left: solid 50px transparent;
+  border-right: solid 0px transparent;
+  border-bottom: solid 10px transparent;
+  content: '';
+  display: block;
+  left: 79px;
+  top: 40px;
+  position: absolute;
 }
 .big {
-    color: var(--VeryDark-Blue);
+  color: var(--VeryDark-Blue);
 }
-.msg-box span{
-    font-size: 15px;
-    padding: 5px;
+.msg-box span {
+  font-size: 15px;
+  padding: 5px;
 }
 .attribution {
-    font-size: 11px;
-    text-align: center;
-  }
+  font-size: 11px;
+  text-align: center;
+}
 
-  .attribution a {
-    color: hsl(228, 45%, 44%);
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+@media only screen and (max-width: 500px) {
+  body {
+    background-image: url('../images/bg-mobile.png');
   }
+  .container {
+    flex-direction: column;
+  }
+  .left-box {
+    height: 150px;
+    margin-left: 5rem;
+    padding: 30px;
+    width: 70%;
+  }
+  .left-img {
+    margin: 0;
+    padding: 30px;
+  }
+  .right-box {
+    margin-top: 6rem;
+    margin-left: 5rem;
+    width: 70%;
+  }
+  .bold-1 {
+    margin-left: 150px;
+    top: -10px;
+  }
+  .msg-box {
+    right: 280px;
+    top: 550px;
+    left: 35%;
+    width: 150px;
+  }
+  .msg-box::after {
+    display: none;
+  }
+  .msg-box span {
+    font-size: 15px;
+    padding: 5px;
+  }
+}

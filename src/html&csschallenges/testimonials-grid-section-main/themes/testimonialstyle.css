@@ -1,125 +1,136 @@
 :root {
-    --font-family: "Barlow Semi Condensed", sans-serif;
-    --Light-gray: hsl(0, 0%, 81%);
-    --Light-grayish-blue: hsl(210, 46%, 95%);
-    --Moderate-violet: hsl(263, 55%, 52%);
-    --Very-dark-grayish-blue: hsl(210, 9%, 39%);
-    --Very-dark-blackish-blue: hsl(219, 29%, 14%);
-    --White: hsl(0, 0%, 100%);
+  --font-family: 'Barlow Semi Condensed', sans-serif;
+  --Light-gray: hsl(0, 0%, 81%);
+  --Light-grayish-blue: hsl(210, 46%, 95%);
+  --Moderate-violet: hsl(263, 55%, 52%);
+  --Very-dark-grayish-blue: hsl(210, 9%, 39%);
+  --Very-dark-blackish-blue: hsl(219, 29%, 14%);
+  --White: hsl(0, 0%, 100%);
 }
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
-body{
-    font-family: var(--font-family);
-    padding-top: 2.5rem;
-    padding-bottom: 1rem;
+body {
+  font-family: var(--font-family);
+  padding-top: 2.5rem;
+  padding-bottom: 1rem;
 }
-.container{
-    background-color: var(--Light-grayish-blue);
-    display: grid;
-    grid-template-columns: repeat(4,1fr);
-    grid-template-rows: auto;
-    grid-template-areas: 
-    "daniel daniel jonathan kira"
-    "daniel daniel jonathan kira"
-    "jeanetta patrick patrick kira"
-    ;
-    gap:20px;
-    height: auto;
-    max-width: 1400px;
-    margin-bottom: 1.3rem;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 5rem;
+.container {
+  background-color: var(--Light-grayish-blue);
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: auto;
+  grid-template-areas:
+    'daniel daniel jonathan kira'
+    'daniel daniel jonathan kira'
+    'jeanetta patrick patrick kira';
+  gap: 20px;
+  height: auto;
+  max-width: 1400px;
+  margin-bottom: 1.3rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 5rem;
 }
-.daniel, 
-.jonathan, 
-.jeanetta, 
-.patrick, 
+.daniel,
+.jonathan,
+.jeanetta,
+.patrick,
 .kira {
-    border-radius: 5px;
-    padding: 2rem;
+  border-radius: 5px;
+  padding: 2rem;
 }
 
 .daniel {
-    background-color: var(--Moderate-violet);
-    background-image: url("../images/bg-pattern-quotation.svg");
-    background-repeat: no-repeat;
-    background-position: top right;
-    background-size: 100px;
-    background-position-x: 80%;
-    color: var(--White);
-    grid-area: daniel;
+  background-color: var(--Moderate-violet);
+  background-image: url('../images/bg-pattern-quotation.svg');
+  background-repeat: no-repeat;
+  background-position: top right;
+  background-size: 100px;
+  background-position-x: 80%;
+  color: var(--White);
+  grid-area: daniel;
 }
 
 .user-details {
-    align-items: center;
-    color: var(--Light-gray);
-    display: flex;
-    font-size: 20px;
-    gap: 30px;
-    margin-bottom: 10px;
+  align-items: center;
+  color: var(--Light-gray);
+  display: flex;
+  font-size: 20px;
+  gap: 30px;
+  margin-bottom: 10px;
 }
 
-.user-details img{
-    border-radius: 50%;
+.user-details img {
+  border-radius: 50%;
 }
-.user-details h4{
-    color: var(--White);
-    font-size: 15px;
+.user-details h4 {
+  color: var(--White);
+  font-size: 15px;
 }
 .user-details p {
-    color: var(--Light-gray);
-    font-size: 12px;
-    gap: 20px;
+  color: var(--Light-gray);
+  font-size: 12px;
+  gap: 20px;
 }
 .review {
-    font-size: 1.4rem;
-    font-weight: 500;
-    margin-bottom: 1rem;
+  font-size: 1.4rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
 }
 .feedback {
-    color: var(--Light-grayish-blue);
-    line-height: 1.5;
-    margin-bottom: 1rem;
+  color: var(--Light-grayish-blue);
+  line-height: 1.5;
+  margin-bottom: 1rem;
 }
 .feedback-one {
-    color: rgb(53, 49, 49);
-    line-height: 1.5;
-    margin-bottom: 1rem;
+  color: rgb(53, 49, 49);
+  line-height: 1.5;
+  margin-bottom: 1rem;
 }
 
 .jonathan {
-    background-color: var(--Very-dark-grayish-blue);
-    color: var(--White);
-    grid-area: jonathan;
+  background-color: var(--Very-dark-grayish-blue);
+  color: var(--White);
+  grid-area: jonathan;
 }
 .jeanetta {
-    background-color: var(--White);
-    color: black;
-    grid-area: jeanetta;
+  background-color: var(--White);
+  color: black;
+  grid-area: jeanetta;
 }
 .patrick {
-    background-color: var(--Very-dark-blackish-blue);
-    color: var(--White);
-    grid-area: patrick;
+  background-color: var(--Very-dark-blackish-blue);
+  color: var(--White);
+  grid-area: patrick;
 }
 .kira {
-    background-color: var(--White);
-    color: black;
-    grid-area: kira;
+  background-color: var(--White);
+  color: black;
+  grid-area: kira;
 }
-.jeanetta h4, 
+.jeanetta h4,
 .kira h4 {
-    color: var(--Very-dark-blackish-blue);
+  color: var(--Very-dark-blackish-blue);
 }
 .attribution {
-      font-size: 11px;
-      text-align: center;
+  font-size: 11px;
+  text-align: center;
 }
 .attribution a {
-    color: hsl(228, 45%, 44%);
+  color: hsl(228, 45%, 44%);
+}
+@media only screen and (max-width: 784px) {
+  .container {
+    grid-template-columns: auto;
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas:
+      'daniel'
+      'jonathan'
+      'jeanetta'
+      'patrick'
+      'kira';
+  }
 }

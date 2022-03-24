@@ -1,101 +1,148 @@
 :root {
---Blue: hsl(223, 87%, 63%);
---Pale-Blue: hsl(223, 100%, 88%);
---Light-Red: hsl(354, 100%, 66%);
---ray: hsl(0, 0%, 59%);
---Very-DarkBlue: hsl(209, 33%, 12%);
---main-font: "Libre Franklin",sans-serif;
+  --Blue: hsl(223, 87%, 63%);
+  --Pale-Blue: hsl(223, 100%, 88%);
+  --Light-Red: hsl(354, 100%, 66%);
+  --ray: hsl(0, 0%, 59%);
+  --Very-DarkBlue: hsl(209, 33%, 12%);
+  --main-font: 'Libre Franklin', sans-serif;
 }
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    font-family: var(--main-font);
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: var(--main-font);
 }
 .logo {
-    margin: 50px 0 10px 650px;
+  margin: 50px 0 10px 650px;
 }
-.head h1{
-    margin-left: 500px;
-    margin-bottom: 10px;
+.head h1 {
+  margin-left: 500px;
+  margin-bottom: 10px;
 }
 .head h1 span {
-    color: var(--ray);
-    font-weight: 500;
+  color: var(--ray);
+  font-weight: 500;
 }
-.head h3{
-    margin-left: 550px;
-    color: var(--Very-DarkBlue);
-    margin-bottom: 18px;
+.head h3 {
+  margin-left: 550px;
+  color: var(--Very-DarkBlue);
+  margin-bottom: 18px;
 }
-.dashboard img{
-    width: 600px;
-    margin-left: 420px;
-    margin-top: 20px;
+.dashboard img {
+  width: 600px;
+  margin-left: 420px;
+  margin-top: 20px;
 }
-.mail{
-    display: flex;
-    margin-left: 450px;
+.mail {
+  display: flex;
+  margin-left: 450px;
 }
-.mail input{
-    width: 280px;
-    height: 50px;
-    border-radius: 25px;
-    margin-right: 20px;
-    outline: none;
-    border: 1px solid var(--Pale-Blue);
-    padding: 15px;
+.mail input {
+  width: 280px;
+  height: 50px;
+  border-radius: 25px;
+  margin-right: 20px;
+  outline: none;
+  border: 1px solid var(--Pale-Blue);
+  padding: 15px;
 }
 .mail input::placeholder {
-    color: var(--Pale-Blue);
+  color: var(--Pale-Blue);
 }
 .mail button {
-    width: 150px;
-    height: 45px;
-    background-color: var(--Blue);
-    color: white;
-    outline: none;
-    border-radius: 25px;
-    border: 2px solid var(--Blue);
-    box-shadow: 0px 2px 4px var(--Pale-Blue);
-    font-size: 16px;
-    cursor: pointer;
+  width: 150px;
+  height: 45px;
+  background-color: var(--Blue);
+  color: white;
+  outline: none;
+  border-radius: 25px;
+  border: 2px solid var(--Blue);
+  box-shadow: 0px 2px 4px var(--Pale-Blue);
+  font-size: 16px;
+  cursor: pointer;
 }
 .icon {
-    display: flex;
-    margin-left: 650px;
-    margin-bottom: 10px;
+  display: flex;
+  margin-left: 650px;
+  margin-bottom: 10px;
 }
-.icon i{
-    width: 30px;
-    color: var(--Blue);
-    border: 1px solid var(--Pale-Blue);
-    border-radius: 50%;
-    padding: 8px;
-    margin: 0 10px;
+.icon i {
+  width: 30px;
+  color: var(--Blue);
+  border: 1px solid var(--Pale-Blue);
+  border-radius: 50%;
+  padding: 8px;
+  margin: 0 10px;
 }
 i:hover {
-    background-color: var(--Blue);
-    color: white;
-    cursor: pointer;
+  background-color: var(--Blue);
+  color: white;
+  cursor: pointer;
 }
-.rights{
-    color: var(--ray);
-    font-size: 12px;
-    margin-left: 630px;
-    margin-bottom: 10px;
+.rights {
+  color: var(--ray);
+  font-size: 12px;
+  margin-left: 630px;
+  margin-bottom: 10px;
 }
-.error-text{
-    color: var(--Light-Red);
-    font-size: 12px;
-    margin-top: 60px;
-    margin-left: -430px;
-    display: none;
+.error-text {
+  color: var(--Light-Red);
+  font-size: 12px;
+  margin-top: 60px;
+  margin-left: -430px;
+  display: none;
 }
-.mail.error input{
-	border: 2px solid var(--Light-Red);
+.mail.error input {
+  border: 2px solid var(--Light-Red);
 }
 .mail.error .error-text {
-	display: block;
+  display: block;
 }
 
+@media only screen and (max-width: 783px) {
+  main {
+    display: flex;
+    flex-direction: column;
+  }
+  .logo {
+    margin: 50px 0 10px 70px;
+  }
+  .head h1 {
+    margin-left: 70px;
+    margin-bottom: 10px;
+  }
+  .head h3 {
+    margin-left: 70px;
+  }
+  .dashboard img {
+    width: 350px;
+    margin-left: 20px;
+    margin-top: 80px;
+  }
+  .mail {
+    display: flex;
+    flex-direction: column;
+    margin-left: 50px;
+  }
+  .mail input {
+    width: 300px;
+    height: 50px;
+    margin-bottom: 20px;
+  }
+  .mail button {
+    width: 300px;
+    height: 45px;
+  }
+  .icon {
+    margin-left: 120px;
+    margin-bottom: 10px;
+  }
+  .rights {
+    margin-left: 90px;
+    margin-bottom: 10px;
+  }
+  .error-text {
+    margin-top: -60px;
+    margin-left: 10px;
+  }
+}

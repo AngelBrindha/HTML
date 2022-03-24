@@ -1,178 +1,180 @@
 :root {
-    --fill: 25%;
+  --fill: 25%;
 }
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 body {
-    font-family: "Manrope", sans-serif;
+  font-family: 'Manrope', sans-serif;
 }
 ul {
-    list-style: none;
+  list-style: none;
 }
 .head {
-    background-color: hsl(230, 100%, 99%);
-    background-image: url(../images/pattern-circles.svg);
-    background-size: auto;
-    background-repeat: no-repeat;
-    background-position: top 70px left 50%;
-    text-align: center;
-    padding: 100px 1rem 150px 1rem;
-    border-bottom-left-radius: 150px;
+  background-color: hsl(230, 100%, 99%);
+  background-image: url(../images/pattern-circles.svg);
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-position: top 70px left 50%;
+  text-align: center;
+  padding: 100px 1rem 150px 1rem;
+  border-bottom-left-radius: 150px;
 }
 .head h1 {
-    color: hsl(227, 35%, 25%);
-    font-weight: 800;
+  color: hsl(227, 35%, 25%);
+  font-weight: 800;
 }
 .head p {
-    width: 60%;
-    font-size: 15px;
-    color: hsl(225, 20%, 60%);
-    margin: auto;
+  width: 60%;
+  font-size: 15px;
+  color: hsl(225, 20%, 60%);
+  margin: auto;
 }
 .card {
-    background-color: hsl(0, 0%, 100%);
-    border-radius: 8px;
-    box-shadow: 1px 7px 12px hsl(225, 20%, 80%);
-    margin: 2rem auto;
-    margin-top: -80px;
-    width: 600px;
-    height: 300px;
-    padding: 2rem 1rem;
-    color: hsl(225, 20%, 60%);
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 8px;
+  box-shadow: 1px 7px 12px hsl(225, 20%, 80%);
+  margin: 2rem auto;
+  margin-top: -80px;
+  width: 600px;
+  height: 300px;
+  padding: 2rem 1rem;
+  color: hsl(225, 20%, 60%);
 }
 .pageviews {
-    text-align: left;
-    padding: 1rem 0;
-    text-transform: uppercase;
-    letter-spacing: 1.5px;
-    font-weight: 600;
+  text-align: left;
+  padding: 1rem 0;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  font-weight: 600;
 }
 .scrolling {
-    position: relative;
+  position: relative;
 }
 .scroll {
-    display: block;
-    width: 100%;
-    height: 10px;
-    background-color: hsl(224, 65%, 95%);
-    margin: 1rem 0;
-    border-radius: 5px;
-    transition: all 0.2 linear;
-    outline: none;
-    -webkit-appearance: none;
+  display: block;
+  width: 100%;
+  height: 10px;
+  background-color: hsl(224, 65%, 95%);
+  margin: 1rem 0;
+  border-radius: 5px;
+  transition: all 0.2 linear;
+  outline: none;
+  -webkit-appearance: none;
 }
 .scroll::-webkit-progress-value {
-    -webkit-appearance: none;
-    background: green;
+  -webkit-appearance: none;
+  background: green;
 }
 .scroll::-webkit-slider-thumb {
-    -webkit-appearance: none;
-    width: 40px;
-    height: 40px;
-    background: hsl(174, 86%, 45%);
-    background-image: url(../images/icon-slider.svg);
-    background-repeat: no-repeat;
-    background-size: 65%;
-    background-position: center;
-    border-radius: 50%;
-    box-shadow: 0 2px 4px hsl(174, 86%, 45%);
+  -webkit-appearance: none;
+  width: 40px;
+  height: 40px;
+  background: hsl(174, 86%, 45%);
+  background-image: url(../images/icon-slider.svg);
+  background-repeat: no-repeat;
+  background-size: 65%;
+  background-position: center;
+  border-radius: 50%;
+  box-shadow: 0 2px 4px hsl(174, 86%, 45%);
 }
 .scroll:hover::-webkit-slider-thumb {
-    -webkit-appearance: none;
-    background-color: hsl(174, 77%, 60%);
-    cursor: pointer;
+  -webkit-appearance: none;
+  background-color: hsl(174, 77%, 60%);
+  cursor: pointer;
 }
 .scroll:focus::-webkit-slider-thumb {
-    -webkit-appearance: none;
-    background-color: hsl(174, 86%, 45%);
-    box-shadow: none;
+  -webkit-appearance: none;
+  background-color: hsl(174, 86%, 45%);
+  box-shadow: none;
 }
 .scroll-fill {
-    width: var(--fill);
-    height: 10px;
-    border-radius: 5px 0 0 5px;
-    background-color: hsl(174, 86%, 45%);
-    position: absolute;
-    top: 0;
-    cursor: pointer;
+  width: var(--fill);
+  height: 10px;
+  border-radius: 5px 0 0 5px;
+  background-color: hsl(174, 86%, 45%);
+  position: absolute;
+  top: 0;
+  cursor: pointer;
 }
 .monthly-cost {
-    text-align: right;
-    margin-top: -50px;
+  text-align: right;
+  margin-top: -50px;
 }
-.price{
-    font-size: 2rem;
-    color: hsl(227, 35%, 25%);
-    font-weight: 800;
+.price {
+  font-size: 2rem;
+  color: hsl(227, 35%, 25%);
+  font-weight: 800;
 }
 .toggle {
-    display: flex;
-    justify-content: center;
-    font-size: 14px;
-    margin: 1rem 0;
+  display: flex;
+  justify-content: center;
+  font-size: 14px;
+  margin: 1rem 0;
 }
 .toggle-btn {
-    width: 40px;
-    height: 20px;
-    border-radius: 12px;
-    background-color: hsl(223, 50%, 87%);
-    margin: 0 15px;
-    cursor: pointer;
+  width: 40px;
+  height: 20px;
+  border-radius: 12px;
+  background-color: hsl(223, 50%, 87%);
+  margin: 0 15px;
+  cursor: pointer;
 }
 .toggle-switch {
-    margin: 2px;
-    display: inline-block;
-    width: 20px;
-    height: 19px;
-    background: white;
-    border-radius: 10px;
-    cursor: pointer;
+  margin: 2px;
+  display: inline-block;
+  width: 20px;
+  height: 19px;
+  background: white;
+  border-radius: 10px;
+  cursor: pointer;
 }
 .toggle-btn:hover,
 .toggle-btn:focus {
-    background-color: hsl(174, 77%, 80%);
+  background-color: hsl(174, 77%, 80%);
 }
-.toggle-switch--on{
-    transform: translateX(calc(100% - 2px));
+.toggle-switch--on {
+  transform: translateX(calc(100% - 2px));
 }
 .card-footer {
-    display: flex;
-    flex-direction: column;
-    margin: 2rem 1rem;
-    padding-top: 1rem;
-    border-top: solid 2px hsl(225, 20%, 60%, 0.25);
+  display: flex;
+  flex-direction: column;
+  margin: 2rem 1rem;
+  padding-top: 1rem;
+  border-top: solid 2px hsl(225, 20%, 60%, 0.25);
 }
 .discount {
-    background-color: hsl(14, 92%, 95%);
-    color: hsl(15, 100%, 70%);
-    margin-left: 30px;
-    border-radius: 10px;
-    padding: 2px;
+  background-color: hsl(14, 92%, 95%);
+  color: hsl(15, 100%, 70%);
+  margin-left: 30px;
+  border-radius: 10px;
+  padding: 2px;
 }
-.box-item{
-    margin-bottom: 15px;
+.box-item {
+  margin-bottom: 15px;
 }
 .box-item:hover {
-    color: hsl(174, 86%, 45%);
-    cursor: pointer;
+  color: hsl(174, 86%, 45%);
+  cursor: pointer;
 }
 .check {
-    margin-right: 8px;
+  margin-right: 8px;
 }
 .trial {
-    display: block;
-    padding: 0.5rem 2rem;
-    margin: 1rem auto;
-    color: hsl(224, 65%, 95%);
-    background-color: hsl(227, 35%, 25%);
-    border: solid 2px hsl(227, 35%, 25%);
-    border-radius: 25px;
-    text-align: center;
-    font-weight: 800;
-    margin: -80px 0 30px 300px;
-    width: 200px;
-    cursor: pointer;
+  display: block;
+  padding: 0.5rem 2rem;
+  margin: 1rem auto;
+  color: hsl(224, 65%, 95%);
+  background-color: hsl(227, 35%, 25%);
+  border: solid 2px hsl(227, 35%, 25%);
+  border-radius: 25px;
+  text-align: center;
+  font-weight: 800;
+  margin: -80px 0 30px 300px;
+  width: 200px;
+  cursor: pointer;
+}
+@media only screen and (max-width: 600px) {
 }
