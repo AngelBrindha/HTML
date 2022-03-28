@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./themes/style.css">
+  <title>Interactive pricing component</title>
+
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+
+<body>
+  <main>
+    <div class="head">
+      <h1>Simple, traffic-based pricing</h1>
+      <p>Sign-up for our 30-day trial. No credit card required.</p>
+    </div>
+    <div class="card">
+      <div class="card-header">
+        <p class="pageviews">
+          <span id="page">100k</span>Pageviews
+        </p>
+        <p class="monthly-cost">
+          <span class="price">$16.00</span> /month
+        </p>
+        <div class="scrolling">
+          <input type="range" class="scroll" min="1" max="5" step="1" value="2">
+          <div class="scroll-fill"></div>
+        </div>
+
+      </div>
+      <div class="toggle">
+        <p> Monthly Billing</p>
+        <div class="toggle-btn" id="toggle-btn">
+          <span class="toggle-switch"></span>
+        </div>
+        <p>Yearly Billing<span class="discount"> 25% discount</span></p>
+      </div>
+      <div class="card-footer">
+        <ul class="box">
+          <li class="box-item"> <img src="./images/icon-check.svg" alt="" class="check"> Unlimited websites</li>
+          <li class="box-item"> <img src="./images/icon-check.svg" alt="" class="check">100% data ownership</li>
+          <li class="box-item"> <img src="./images/icon-check.svg" alt="" class="check">Email reports</li>
+        </ul>
+        <button class="trial">Start my trial</button>
+      </div>
+    </div>
+  </main>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Angel</a>.
+  </div>
+  <script src="./script/script.js"></script>
+</body>
+
+</html>
