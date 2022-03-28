@@ -1,0 +1,47 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: rgb(192, 189, 189);
+}
+.container {
+  padding: 100px;
+  margin-left: 200px;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: 330px 360px;
+  grid-template-areas:
+    'given-currency from-country'
+    'in to-country'
+    'is converted-currency';
+  width: 200px;
+  text-align: center;
+  gap: 20px;
+}
+.card {
+  background-color: white;
+  padding: 20px;
+  width: 750px;
+}
+select,
+.from-country,
+.to-country,
+.given-currency,
+.in,
+.is,
+.converted-currency {
+  background-color: rgb(243, 200, 7);
+  padding: 20px;
+  border: none;
+  outline: none;
+  font-weight: 700;
+  font-size: 20px;
+  appearance: none;
+}
+.converted-currency::placeholder {
+  color: black;
+  text-align: center;
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./currencyconverter.css">
+    <title>Currency Converter</title>
+</head>
+
+<body>
+    <div class="container">
+        <form>
+            <div class="card">
+                <div class="grid-container">
+                    <input type="number" name="number" class="given-currency" id="given-amount">
+                    <div class="from-country">
+                        <select name="country" title="Select a country" value="select a country">
+                        </select>
+                    </div>
+                    <div class="in">in</div>
+                    <div class="to-country">
+                        <select name="to-country" title="Select a country" value="select a country">
+                        </select>
+                    </div>
+                    <div class="is">is</div>
+                    <div type="text" readonly class="converted-currency" id="convert-amount"> 0 </div>
+                </div>
+            </div>
+        </form>
+    </div>
+    <script src="./currencies.js" type="module"></script>
+</body>
+
+</html>
