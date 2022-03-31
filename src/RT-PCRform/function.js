@@ -53,7 +53,7 @@ export function savedata() {
 }
 
 export function myFunction() {
-  var input, filter, table, tr, td1, i, txtValue1, txtValue3, td3;
+  var input, filter, table, tr, td1, i, txtValue1, txtValue3, td3, j;
   input = document.getElementById('search');
   filter = input.value.toUpperCase();
   table = document.getElementById('myTable');
