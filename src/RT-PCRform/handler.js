@@ -1,24 +1,25 @@
 import { form, table } from './element.js';
-import { getRadioValue } from './radio.js';
+// import { getRadioValue } from './radio.js';
 form.addEventListener('submit', (e) => {
   e.preventDefault();
   savedata();
 });
 
 export function savedata() {
-  getRadioValue();
+  // getRadioValue();
   var data = {
     name: document.getElementById('name').value,
-    gender: getRadioValue('gender'),
+    gender: document.querySelector('input[name="gender"]:checked').value,
     aadhar: document.getElementById('aadhar').value,
     dob: document.getElementById('dob').value,
     city: document.getElementById('city').value,
     dot: document.getElementById('dot').value,
     tot: document.getElementById('tot').value,
-    result: getRadioValue('result'),
+    result: document.querySelector('input[name="result"]:checked').value,
     labName: document.getElementById('lab-name').value,
     reportNum: document.getElementById('report-num').value,
   };
+  console.log(data);
   var row = table.insertRow(-1);
 
   var cell1 = row.insertCell(-1);
