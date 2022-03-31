@@ -10,7 +10,7 @@ export function searchDisplay() {
 }
 
 button.addEventListener('submit', (e) => {
-  e.preventDefault();
+  myFunction();
   searchdata();
 });
 export function searchdata() {
@@ -27,7 +27,6 @@ export function searchdata() {
     reportNum: document.getElementById('report-num').value,
   };
   console.log(data);
-  myFunction();
   var row = table.insertRow(-1);
 
   var cell1 = row.insertCell(-1);
