@@ -121,12 +121,9 @@ td {
   outline: none;
   font-weight: 900;
   border-radius: 5px;
-  margin-left: 500px;
+  margin-left: -50px;
   cursor: pointer;
 }
 #display {
-  display: none;
-}
-#button {
   display: none;
 }
