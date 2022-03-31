@@ -13,7 +13,7 @@ function getRadioValue(theRadioGroup) {
 }
 
 export function savedata() {
-  var data = {
+  data = {
     name: document.getElementById('name').value,
     gender: getRadioValue('gender'),
     aadhar: document.getElementById('aadhar').value,
@@ -26,10 +26,6 @@ export function savedata() {
     reportNum: document.getElementById('report-num').value,
   };
   console.log(data);
-  createtablerow();
-}
-
-export function createtablerow() {
   row = table.insertRow(-1);
 
   var cell1 = row.insertCell(-1);
