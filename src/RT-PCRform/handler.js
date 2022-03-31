@@ -6,6 +6,7 @@ form.addEventListener('submit', (e) => {
 });
 
 export function savedata() {
+  getRadioValue();
   var data = {
     name: document.getElementById('name').value,
     gender: getRadioValue('gender'),
@@ -42,6 +43,4 @@ export function savedata() {
   cell9.innerHTML = data.labName;
   cell10.innerHTML = data.reportNum;
   table.appendChild(row);
-
-  console.log(data);
 }
