@@ -40,15 +40,15 @@ export function searchdata() {
   var cell9 = row.insertCell(-1);
   var cell10 = row.insertCell(-1);
 
-  cell1.innerHTML = data.name.txtValue3;
-  cell2.innerHTML = data.gender.txtValue3;
-  cell3.innerHTML = data.aadhar.txtValue3;
-  cell4.innerHTML = data.dob.txtValue3;
-  cell5.innerHTML = data.city.txtValue3;
-  cell6.innerHTML = data.dot.txtValue3;
-  cell7.innerHTML = data.tot.txtValue3;
-  cell8.innerHTML = data.result.txtValue3;
-  cell9.innerHTML = data.labName.txtValue3;
-  cell10.innerHTML = data.reportNum.txtValue3;
+  cell1.innerHTML = data.name.td3;
+  cell2.innerHTML = data.gender.td3;
+  cell3.innerHTML = data.aadhar.td3;
+  cell4.innerHTML = data.dob.td3;
+  cell5.innerHTML = data.city.td3;
+  cell6.innerHTML = data.dot.td3;
+  cell7.innerHTML = data.tot.td3;
+  cell8.innerHTML = data.result.td3;
+  cell9.innerHTML = data.labName.td3;
+  cell10.innerHTML = data.reportNum.td3;
   table.appendChild(row);
 }
