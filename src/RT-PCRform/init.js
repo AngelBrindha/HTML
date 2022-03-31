@@ -1,7 +1,13 @@
-import { display, savedata, myFunction } from './function.js';
+import { savedata, myFunction } from './function.js';
+import { add } from './element.js';
 
 {
-  display();
+  add.addEventListener('click', (e) => {
+    display();
+  });
+  function display() {
+    document.getElementById('display').style.display = 'block';
+  }
   savedata();
   myFunction();
 }
