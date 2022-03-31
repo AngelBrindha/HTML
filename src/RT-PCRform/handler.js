@@ -27,11 +27,6 @@ export function savedata() {
     labName: document.getElementById('lab-name').value,
     reportNum: document.getElementById('report-num').value,
   };
-  console.log(data);
-  createtable();
-}
-
-function createtable() {
   var row = table.insertRow(-1);
 
   var cell1 = row.insertCell(-1);
@@ -56,4 +51,6 @@ function createtable() {
   cell9.innerHTML = data.labName;
   cell10.innerHTML = data.reportNum;
   table.appendChild(row);
+
+  console.log(data);
 }
