@@ -1,4 +1,3 @@
-import { savedata, myFunction } from './function.js';
 import { add } from './element.js';
 
 {
