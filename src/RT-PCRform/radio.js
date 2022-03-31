@@ -1,11 +1,11 @@
 import { button } from './element.js';
 import { add } from './element.js';
 import { table } from './element.js';
-import { myFunction } from './handler.js';
+// import { myFunction } from './handler.js';
 add.addEventListener('click', (e) => {
   searchDisplay();
 });
-function searchDisplay() {
+export function searchDisplay() {
   document.getElementById('button').style.display = 'block';
 }
 
@@ -13,8 +13,7 @@ button.addEventListener('submit', (e) => {
   e.preventDefault();
   searchdata();
 });
-function searchdata() {
-  myFunction();
+export function searchdata() {
   var data = {
     name: document.getElementById('name').value,
     gender: document.querySelector('input[name="gender"]:checked').value,
@@ -28,6 +27,7 @@ function searchdata() {
     reportNum: document.getElementById('report-num').value,
   };
   console.log(data);
+  // myFunction();
   var row = table.insertRow(-1);
 
   var cell1 = row.insertCell(-1);
