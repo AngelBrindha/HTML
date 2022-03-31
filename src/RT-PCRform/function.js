@@ -1,4 +1,4 @@
-import { row, table } from './element.js';
+import { table } from './element.js';
 export function display() {
   document.getElementById('display').style.display = 'block';
 }
@@ -26,7 +26,7 @@ export function savedata() {
     reportNum: document.getElementById('report-num').value,
   };
   console.log(data);
-  row = table.insertRow(-1);
+  var row = table.insertRow(-1);
 
   var cell1 = row.insertCell(-1);
   var cell2 = row.insertCell(-1);
