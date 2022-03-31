@@ -1,4 +1,4 @@
-import { form } from './element.js';
+import { form, table } from './element.js';
 
 form.addEventListener('submit', (e) => {
   e.preventDefault();
