@@ -5,11 +5,11 @@ search.addEventListener('click', (e) => {
 });
 
 export function myFunction() {
-  var input, filter, table, tr, td1, i, txtValue1, txtValue3, td3, j;
+  var input, filter, table1, tr, td1, i, txtValue1, txtValue3, td3, j;
   input = document.getElementById('search');
   filter = input.value.toUpperCase();
-  table = document.getElementById('myTable');
-  tr = table.getElementsByTagName('tr');
+  table1 = document.getElementById('searchTable');
+  tr = table1.getElementsByTagName('tr');
 
   for (i = 0; i < tr.length; i++) {
     td1 = tr[i].getElementsByTagName('td')[0];

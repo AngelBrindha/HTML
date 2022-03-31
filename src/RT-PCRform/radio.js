@@ -1,7 +1,7 @@
 import { button } from './element.js';
 import { add } from './element.js';
 import { table } from './element.js';
-// import { myFunction } from './handler.js';
+import { myFunction } from './function';
 add.addEventListener('click', (e) => {
   searchDisplay();
 });
@@ -27,7 +27,7 @@ export function searchdata() {
     reportNum: document.getElementById('report-num').value,
   };
   console.log(data);
-  // myFunction();
+  myFunction();
   var row = table.insertRow(-1);
 
   var cell1 = row.insertCell(-1);

@@ -121,7 +121,7 @@ td {
   outline: none;
   font-weight: 900;
   border-radius: 5px;
-  margin-left: -50px;
+  margin-left: 500px;
   cursor: pointer;
 }
 #display {
