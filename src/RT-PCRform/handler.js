@@ -1,12 +1,10 @@
 import { form, table } from './element.js';
-// import { getRadioValue } from './radio.js';
 form.addEventListener('submit', (e) => {
   e.preventDefault();
   savedata();
 });
 
 export function savedata() {
-  // getRadioValue();
   var data = {
     name: document.getElementById('name').value,
     gender: document.querySelector('input[name="gender"]:checked').value,
