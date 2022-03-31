@@ -1,4 +1,4 @@
-import { row, data, table } from './element.js';
+import { row, table } from './element.js';
 export function display() {
   document.getElementById('display').style.display = 'block';
 }
@@ -13,7 +13,7 @@ function getRadioValue(theRadioGroup) {
 }
 
 export function savedata() {
-  data = {
+  var data = {
     name: document.getElementById('name').value,
     gender: getRadioValue('gender'),
     aadhar: document.getElementById('aadhar').value,
