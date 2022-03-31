@@ -1,7 +1,7 @@
 import { button } from './element.js';
 import { add } from './element.js';
 import { table } from './element.js';
-import { myFunction } from './function';
+import { myFunction } from './function.js';
 add.addEventListener('click', (e) => {
   searchDisplay();
 });
