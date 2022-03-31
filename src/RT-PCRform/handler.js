@@ -1,5 +1,5 @@
 import { add, form, search } from './element.js';
-import { display, savedata, myFunction } from './function.js';
+import { display, savedata, myFunction, createtablerow } from './function.js';
 add.addEventListener('click', (e) => {
   display();
 });

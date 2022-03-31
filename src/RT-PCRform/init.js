@@ -1,7 +1,8 @@
-import { display, savedata, myFunction } from './function.js';
+import { display, savedata, myFunction, createtablerow } from './function.js';
 
 {
   display();
   savedata();
   myFunction();
+  createtablerow();
 }

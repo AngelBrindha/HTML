@@ -29,7 +29,7 @@ export function savedata() {
   createtablerow();
 }
 
-function createtablerow() {
+export function createtablerow() {
   row = table.insertRow(-1);
 
   var cell1 = row.insertCell(-1);
