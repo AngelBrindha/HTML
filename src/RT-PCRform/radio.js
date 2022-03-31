@@ -1,17 +1,20 @@
 import { button } from './element.js';
-
-button.addEventListener('click', (e) => {
+import { add } from './element.js';
+import { table } from './element.js';
+import { myFunction } from './handler.js';
+add.addEventListener('click', (e) => {
   searchDisplay();
 });
 function searchDisplay() {
   document.getElementById('button').style.display = 'block';
 }
 
-form.addEventListener('submit', (e) => {
+button.addEventListener('submit', (e) => {
   e.preventDefault();
   searchdata();
 });
-export function searchdata() {
+function searchdata() {
+  myFunction();
   var data = {
     name: document.getElementById('name').value,
     gender: document.querySelector('input[name="gender"]:checked').value,
@@ -38,15 +41,15 @@ export function searchdata() {
   var cell9 = row.insertCell(-1);
   var cell10 = row.insertCell(-1);
 
-  cell1.innerHTML = data.name;
-  cell2.innerHTML = data.gender;
-  cell3.innerHTML = data.aadhar;
-  cell4.innerHTML = data.dob;
-  cell5.innerHTML = data.city;
-  cell6.innerHTML = data.dot;
-  cell7.innerHTML = data.tot;
-  cell8.innerHTML = data.result;
-  cell9.innerHTML = data.labName;
-  cell10.innerHTML = data.reportNum;
+  cell1.innerHTML = data.name.txtValue3;
+  cell2.innerHTML = data.gender.txtValue3;
+  cell3.innerHTML = data.aadhar.txtValue3;
+  cell4.innerHTML = data.dob.txtValue3;
+  cell5.innerHTML = data.city.txtValue3;
+  cell6.innerHTML = data.dot.txtValue3;
+  cell7.innerHTML = data.tot.txtValue3;
+  cell8.innerHTML = data.result.txtValue3;
+  cell9.innerHTML = data.labName.txtValue3;
+  cell10.innerHTML = data.reportNum.txtValue3;
   table.appendChild(row);
 }
