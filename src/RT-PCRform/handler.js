@@ -1,18 +1,9 @@
 import { form, table } from './element.js';
-
+import { getRadioValue } from './radio.js';
 form.addEventListener('submit', (e) => {
   e.preventDefault();
   savedata();
 });
-
-function getRadioValue(theRadioGroup) {
-  var elements = document.getElementsByName(theRadioGroup);
-  for (var i = 0, l = elements.length; i < l; i++) {
-    if (elements[i].checked) {
-      return elements[i].value;
-    }
-  }
-}
 
 export function savedata() {
   var data = {
