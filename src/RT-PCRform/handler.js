@@ -28,6 +28,10 @@ export function savedata() {
     reportNum: document.getElementById('report-num').value,
   };
   console.log(data);
+  createtable();
+}
+
+function createtable() {
   var row = table.insertRow(-1);
 
   var cell1 = row.insertCell(-1);
