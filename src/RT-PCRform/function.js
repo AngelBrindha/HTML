@@ -1,7 +1,9 @@
 import { search } from './element.js';
+import { searchdata } from './search.js';
 
 search.addEventListener('click', (e) => {
   myFunction();
+  searchdata();
 });
 
 export function myFunction() {
