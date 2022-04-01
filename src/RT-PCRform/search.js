@@ -1,3 +1,10 @@
+import { search } from './element.js';
+
+search.addEventListener('click', (e) => {
+  myFunction();
+  searchdata();
+});
+
 export function searchdata() {
   var data = {
     name: document.getElementById('name').value,
