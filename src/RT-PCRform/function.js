@@ -8,7 +8,7 @@ search.addEventListener('click', (e) => {
 
 export function myFunction() {
   var input, filter, table1, tr, td3, j;
-  // var txtValue3;
+  var txtValue3;
   input = document.getElementById('search');
   filter = input.value;
   table1 = document.getElementById('searchTable');
@@ -16,14 +16,15 @@ export function myFunction() {
 
   for (j = 0; j < tr.length; j++) {
     td3 = tr[j].getElementsByTagName('td')[2];
-    // if (td3) {
-    //   txtValue3 = td3.textContent || td3.innerText;
-    //   console.log(txtValue3);
+    if (td3) {
+      txtValue3 = td3.textContent && td3.innerText;
+      console.log(txtValue3);
 
-    if (td3.indexOf(filter) > -1) {
-      tr[j].style.display = '';
-    } else {
-      tr[j].style.display = 'none';
+      if (td3.indexOf(filter) > -1) {
+        tr[j].style.display = '';
+      } else {
+        tr[j].style.display = 'none';
+      }
     }
   }
 }
