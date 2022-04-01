@@ -37,3 +37,4 @@ export function myFunction() {
     }
   }
 }
+console.log(txtValue3);

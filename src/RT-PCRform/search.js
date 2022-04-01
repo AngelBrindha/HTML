@@ -5,7 +5,6 @@ search.addEventListener('click', (e) => {
 });
 
 export function searchdata() {
-  var td3;
   var data = {
     name: document.getElementById('name').value,
     gender: document.querySelector('input[name="gender"]:checked').value,
@@ -33,15 +32,14 @@ export function searchdata() {
   var cell9 = row.insertCell(-1);
   var cell10 = row.insertCell(-1);
 
-  cell1.innerHTML = data.name.td3;
-  cell2.innerHTML = data.gender.td3;
-  cell3.innerHTML = data.aadhar.td3;
-  cell4.innerHTML = data.dob.td3;
-  cell5.innerHTML = data.city.td3;
-  cell6.innerHTML = data.dot.td3;
-  cell7.innerHTML = data.tot.td3;
-  cell8.innerHTML = data.result.td3;
-  cell9.innerHTML = data.labName.td3;
-  cell10.innerHTML = data.reportNum.td3;
-  table1.appendChild(row);
+  cell1.innerHTML = data.name;
+  cell2.innerHTML = data.gender;
+  cell3.innerHTML = data.aadhar;
+  cell4.innerHTML = data.dob;
+  cell5.innerHTML = data.city;
+  cell6.innerHTML = data.dot;
+  cell7.innerHTML = data.tot;
+  cell8.innerHTML = data.result;
+  cell9.innerHTML = data.labName;
+  cell10.innerHTML = data.reportNum;
 }
