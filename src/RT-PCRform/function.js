@@ -7,7 +7,7 @@ search.addEventListener('click', (e) => {
 });
 
 export function myFunction() {
-  var input, filter, table1, tr, txtValue3, td2, j;
+  var input, filter, table1, tr, txtValue3, td3, j;
   var td1, i, txtValue1;
   input = document.getElementById('search');
   filter = input.value.toUpperCase();
@@ -16,6 +16,7 @@ export function myFunction() {
 
   for (i = 0; i < tr.length; i++) {
     td1 = tr[i].getElementsByTagName('td')[0];
+    console.log(txtValue3);
     if (td1) {
       txtValue1 = td1.textContent || td1.innerText;
       if (txtValue1.toUpperCase().indexOf(filter) > -1) {
@@ -26,9 +27,9 @@ export function myFunction() {
     }
   }
   for (j = 0; j < tr.length; j++) {
-    td2 = tr[j].getElementsByTagName('td')[2];
-    if (td2) {
-      txtValue3 = td2.textContent || td2.innerText;
+    td3 = tr[j].getElementsByTagName('td')[2];
+    if (td3) {
+      txtValue3 = td3.textContent || td3.innerText;
       console.log(txtValue3);
 
       if (txtValue3.toUpperCase().indexOf(filter) > -1) {
