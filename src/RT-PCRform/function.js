@@ -1,4 +1,4 @@
-import { search, table1 } from './element.js';
+import { search } from './element.js';
 import { searchdata } from './search.js';
 
 search.addEventListener('click', (e) => {
@@ -7,7 +7,7 @@ search.addEventListener('click', (e) => {
 });
 
 export function myFunction() {
-  var input, filter, table, tr, txtValue3, td3, j;
+  var input, filter, table1, tr, txtValue3, td3, j;
   var td1, i, txtValue1;
   input = document.getElementById('search');
   filter = input.value.toUpperCase();
