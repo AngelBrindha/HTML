@@ -9,7 +9,7 @@ export function myFunction() {
   // var  td1, i, txtValue1;
   input = document.getElementById('search');
   filter = input.value.toUpperCase();
-  table = document.getElementById('myTable');
+  table = document.getElementById('searchTable');
   tr = table.getElementsByTagName('tr');
 
   // for (i = 0; i < tr.length; i++) {
