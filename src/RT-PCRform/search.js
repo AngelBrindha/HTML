@@ -18,7 +18,7 @@ export function searchdata() {
     reportNum: document.getElementById('report-num').value,
   };
   console.log(data);
-  var row = table.insertRow(-1);
+  var row = table1.insertRow(-1);
 
   var cell1 = row.insertCell(-1);
   var cell2 = row.insertCell(-1);
@@ -41,5 +41,5 @@ export function searchdata() {
   cell8.innerHTML = data.result;
   cell9.innerHTML = data.labName;
   cell10.innerHTML = data.reportNum;
-  table.appendChild(row);
+  table1.appendChild(row);
 }
