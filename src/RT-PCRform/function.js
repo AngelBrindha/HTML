@@ -16,7 +16,8 @@ export function myFunction() {
 
   for (i = 0; i < tr.length; i++) {
     td1 = tr[i].getElementsByTagName('td')[0];
-    console.log(txtValue3);
+    console.log(txtValue1);
+
     if (td1) {
       txtValue1 = td1.textContent || td1.innerText;
       if (txtValue1.toUpperCase().indexOf(filter) > -1) {
