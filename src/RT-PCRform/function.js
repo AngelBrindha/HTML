@@ -20,11 +20,10 @@ export function myFunction() {
     //   txtValue3 = td3.textContent || td3.innerText;
     //   console.log(txtValue3);
 
-      if (td3.toUpperCase().indexOf(filter) > -1) {
-        tr[j].style.display = '';
-      } else {
-        tr[j].style.display = 'none';
-      }
+    if (td3.toUpperCase().indexOf(filter) > -1) {
+      tr[j].style.display = '';
+    } else {
+      tr[j].style.display = 'none';
     }
   }
 }
