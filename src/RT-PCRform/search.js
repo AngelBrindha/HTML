@@ -41,5 +41,4 @@ export function searchdata() {
   cell8.innerHTML = data.result;
   cell9.innerHTML = data.labName;
   cell10.innerHTML = data.reportNum;
-  table1.appendChild(row);
 }
