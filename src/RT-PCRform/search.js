@@ -1,4 +1,4 @@
-import { search } from './element.js';
+import { search, table1 } from './element.js';
 
 search.addEventListener('click', (e) => {
   searchdata();
