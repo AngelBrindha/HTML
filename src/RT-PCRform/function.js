@@ -10,7 +10,7 @@ export function myFunction() {
   var input, filter, table1, tr, td3, j;
   // var txtValue3;
   input = document.getElementById('search');
-  filter = input.value.toUpperCase();
+  filter = input.value;
   table1 = document.getElementById('searchTable');
   tr = table1.getElementsByTagName('tr');
 
@@ -20,7 +20,7 @@ export function myFunction() {
     //   txtValue3 = td3.textContent || td3.innerText;
     //   console.log(txtValue3);
 
-    if (td3.toUpperCase().indexOf(filter) > -1) {
+    if (td3.indexOf(filter) > -1) {
       tr[j].style.display = '';
     } else {
       tr[j].style.display = 'none';
