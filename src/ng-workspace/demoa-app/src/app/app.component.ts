@@ -8,6 +8,8 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'demoa-app';
   location = 'chennai';
+  total: number = 1000;
+  hits: number = 50;
 
   onBoxValuChange(paramData: any)
   {
