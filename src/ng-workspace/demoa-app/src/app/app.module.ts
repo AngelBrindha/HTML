@@ -10,6 +10,7 @@ import { CustomerFormComponent } from './customer-form/customer-form.component';
 import { CountdisplayComponent } from './countdisplay/countdisplay.component';
 import { HitButtonComponent } from './hit-button/hit-button.component';
 import { CountAppComponent } from './count-app/count-app.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -19,7 +20,8 @@ import { CountAppComponent } from './count-app/count-app.component';
     CustomerFormComponent,
     CountdisplayComponent,
     HitButtonComponent,
-    CountAppComponent
+    CountAppComponent,
+    
   ],
   imports: [
     BrowserModule,
@@ -28,6 +30,6 @@ import { CountAppComponent } from './count-app/count-app.component';
 
   ],
   providers: [],
-  bootstrap: [HomeComponent, AppHeaderComponent, AppComponent]
+  bootstrap: [ AppComponent, HomeComponent, AppHeaderComponent,]
 })
 export class AppModule { }
